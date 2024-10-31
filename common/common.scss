@@ -1,0 +1,65 @@
+body {
+  background: $BG_Main;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sidebar-section-header-text {
+  font-size: 16px;
+}
+
+.sidebar-section-link-content-text {
+  font-size: 17px;
+}
+
+.sidebar-section-header-text,
+.sidebar-section-link-content-text {
+  color: #c5b16f;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  font-family: XXII Centar;
+}
+
+.category-name,
+.category-description {
+  font-family: Noto Sans;
+  line-height: 22px;
+  text-align: left;
+}
+
+.category-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.category-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+.d-header {
+  background-color: #151a25;
+}
+.sidebar-section-link-wrapper .sidebar-section-link {
+  color: #c5b16f;
+}
+.sidebar-wrapper {
+  background-color: #101a2a;
+  color: #c5b16f;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: XXII Centar;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.sidebar-footer-wrapper {
+  display: none;
+}
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
+  color: #c5b16f;
+}

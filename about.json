@@ -1,0 +1,36 @@
+{
+  "name": "BS Theme v0.1",
+  "about_url": "https://www.figma.com/design/pk9R4T9NawbPCdFf7S4xHa/Forum_BS?node-id=0-1&node-type=canvas&t=RH3LaqkvPTaXy1cD-0",
+  "license_url": "https://github.com/cshark3000/bs_theme?tab=MIT-1-ov-file#",
+
+  "component": false,
+
+  "assets": {
+    "BG": "assets/BG.png",
+    "Bg_olymp": "assets/Bg_olymp.png",
+    "BG_olymp2": "assets/BG_olymp2.png",
+    "XXIICentar-Bold": "assets/XXIICentar-Bold.ttf",
+    "XXIICentar-Light": "assets/XXIICentar-Light.ttf",
+    "XXIICentar-Medium": "assets/XXIICentar-Medium.ttf",
+    "XXIICentar-Regular": "assets/XXIICentar-Regular.ttf"
+  },
+
+  "color_schemes": {
+    "BS_Color": {
+      "primary": "F9DF94",
+      "secondary": "151A25",
+      "tertiary": "C5B16F",
+      "quaternary": "e45735",
+      "header_background": "1E2533",
+      "header_primary": "B19F63",
+      "highlight": "143F63",
+      "danger": "BD2E3D",
+      "success": "007D34",
+      "love": "1969AD",
+      "selected": "776030",
+      "hover": "F9DF94"
+    }
+  },
+  "modifiers": {},
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
