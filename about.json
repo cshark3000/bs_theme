@@ -3,8 +3,6 @@
   "about_url": "https://www.figma.com/design/pk9R4T9NawbPCdFf7S4xHa/Forum_BS?node-id=0-1&node-type=canvas&t=RH3LaqkvPTaXy1cD-0",
   "license_url": "https://github.com/cshark3000/bs_theme?tab=MIT-1-ov-file#",
 
-  "component": false,
-
   "assets": {
     "BG": "assets/BG.png",
     "Bg_olymp": "assets/Bg_olymp.png",
