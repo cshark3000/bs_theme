@@ -11,7 +11,9 @@
     "BG_Main": "assets/BG_Main.png",
     "Chat_icon": "assets/Chat_icon.png",
     "rock_pattern": "assets/rock_pattern.png",
-    "XXIICentar": "assets/XXIICentar.ttf"
+    "XXIICentar": "assets/XXIICentar.ttf",
+    "nav-divider": "assets/nav-divider.svg",
+    "nav-active": "assets/nav-active.svg"
   },
   "color_schemes": {
     "BS_Color": {
@@ -29,7 +31,6 @@
       "hover": "F9DF94"
     }
   },
-  "modifiers": {
-  },
+  "modifiers": {},
   "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
 }
