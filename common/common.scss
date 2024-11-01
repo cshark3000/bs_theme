@@ -38,10 +38,11 @@ body {
 }
 
 .custom-search-banner-wrap {
-  font-family: Albertus Nova;
-  font-weight: 200;
-  line-height: 48px;
-  text-align: center;
+  font-family: Albertus Nova !important;
+  font-size: 45px !important;
+  font-weight: 200 !important;
+  line-height: 48px !important;
+  text-align: center !important;
 
   .search-menu {
     .search-menu-container {
