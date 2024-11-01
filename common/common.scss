@@ -1,6 +1,11 @@
 /* ===========================
    Global Styles
 =========================== */
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: url($BG_Main);
   background-size: cover;
@@ -9,7 +14,7 @@ body {
   font-family: XXII Centar;
 }
 
-.wrap {
+#main-outlet-wrapper {
   background-color: rgba(16, 21, 32, 0.9);
   -webkit-backdrop-filter: blur(1rem);
   backdrop-filter: blur(0.3rem);

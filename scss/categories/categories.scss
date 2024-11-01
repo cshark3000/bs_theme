@@ -55,7 +55,7 @@
 }
 
 .navigation-container {
-  border-bottom: none;
+  border-bottom: 0 !important;
   position: relative;
   &::after {
     content: "";
