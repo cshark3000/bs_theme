@@ -2,146 +2,108 @@
    Global Styles
 =========================== */
 body {
-    background: url($BG_Main);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: XXII Centar;
+  background: url($BG_Main);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: XXII Centar;
 }
 
 .wrap {
-    background-color: rgba(16, 21, 32, 0.9);
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(0.3rem);
+  background-color: rgba(16, 21, 32, 0.9);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(0.3rem);
 }
 
 .btn {
-    background-color: rgba(10, 20, 32, 0.70);
-    color: #D7C27D;
+  background-color: rgba(10, 20, 32, 0.7);
+  color: #d7c27d;
 }
 
 /* ===========================
    Header Styles
 =========================== */
 .d-header {
-    background-color: #151A25 !important;
+  background-color: #151a25 !important;
 }
 
 .d-header .wrap {
-    opacity: 1;
-    background-color: #151A25 !important;
+  opacity: 1;
+  background-color: #151a25 !important;
 }
 
 /* ===========================
    Sidebar Styles
 =========================== */
 .sidebar-wrapper {
-    background-color: #101A2A;
-    background: url($rock_pattern);
-    color: #C5B16F;
-    leading-trim: both;
-    text-edge: cap;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    opacity: 1 !important;
+  background-color: #101a2a;
+  background: url($rock_pattern);
+  color: #c5b16f;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 1 !important;
 }
 
 .sidebar-footer-wrapper {
-    display: none;
+  display: none;
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link {
-    color: #C5B16F;
+  color: #c5b16f;
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
-    color: #C5B16F;
+  color: #c5b16f;
 }
 
 /* ===========================
    Sidebar Text Styles
 =========================== */
 .sidebar-section-header-text {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .sidebar-section-link-content-text {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .sidebar-section-header-text,
 .sidebar-section-link-content-text {
-    color: #C5B16F;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
+  color: #c5b16f;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
 }
 
 /* ===========================
    Category Styles
 =========================== */
-.category-name,
-.category-description {
-    line-height: 22px;
-    text-align: left;
-}
-
-.category-name {
-    font-size: 18px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-.category-description {
-    font-size: 16px;
-    font-weight: 400;
-    color: #AAAAAA;
-}
-
-.categories table {
-    border-collapse: separate !important;
-    border-spacing: 0 10px !important;
-}
-
-.categories table tr td {
-    padding: 10px;
-    overflow: hidden;
-}
-
-.categories table tr td:first-child {
-    background: linear-gradient(90deg, rgba(30, 37, 51, 0.80) 0%, rgba(22, 28, 40, 0.80) 100%);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.categories table tr td:last-child {
-    background: rgba(22, 28, 40, 0.80);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+@import "test/categories.scss";
 
 /* ===========================
    Select Kit Styles
 =========================== */
 .select-kit-header {
-    border: 1px solid rgba(41, 49, 68, 0.90);
-    background-color: #181C26 !important;
+  border: 1px solid rgba(41, 49, 68, 0.9);
+  background-color: #181c26 !important;
 }
 
 .select-kit.combo-box.category-drop .category-drop-header {
-    border: 1px solid rgba(41, 49, 68, 0.90);
+  border: 1px solid rgba(41, 49, 68, 0.9);
 }
 
 .list-controls .combo-box .combo-box-header {
-    border: 1px solid rgba(41, 49, 68, 0.90);
+  border: 1px solid rgba(41, 49, 68, 0.9);
 }
 
 /* ===========================
    Boxed Element Styles
 =========================== */
 .boxed {
-    border-radius: 10px;
+  border-radius: 10px;
 }
