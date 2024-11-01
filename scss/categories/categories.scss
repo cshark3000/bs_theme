@@ -63,6 +63,8 @@
     position: absolute;
     bottom: -5px;
     background-image: url($nav-divider);
+    background-position: center;
+    background-size: cover;
   }
 
   .nav-pills {
