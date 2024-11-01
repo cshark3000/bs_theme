@@ -1,65 +1,147 @@
+/* ===========================
+   Global Styles
+=========================== */
 body {
-  background: url("../assets/BG.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url($BG_Main);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: XXII Centar;
 }
 
+.wrap {
+    background-color: rgba(16, 21, 32, 0.9);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(0.3rem);
+}
+
+.btn {
+    background-color: rgba(10, 20, 32, 0.70);
+    color: #D7C27D;
+}
+
+/* ===========================
+   Header Styles
+=========================== */
+.d-header {
+    background-color: #151A25 !important;
+}
+
+.d-header .wrap {
+    opacity: 1;
+    background-color: #151A25 !important;
+}
+
+/* ===========================
+   Sidebar Styles
+=========================== */
+.sidebar-wrapper {
+    background-color: #101A2A;
+    background: url($rock_pattern);
+    color: #C5B16F;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 1 !important;
+}
+
+.sidebar-footer-wrapper {
+    display: none;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link {
+    color: #C5B16F;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
+    color: #C5B16F;
+}
+
+/* ===========================
+   Sidebar Text Styles
+=========================== */
 .sidebar-section-header-text {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .sidebar-section-link-content-text {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .sidebar-section-header-text,
 .sidebar-section-link-content-text {
-  color: #c5b16f;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  font-family: XXII Centar;
+    color: #C5B16F;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
 }
 
+/* ===========================
+   Category Styles
+=========================== */
 .category-name,
 .category-description {
-  font-family: Noto Sans;
-  line-height: 22px;
-  text-align: left;
+    line-height: 22px;
+    text-align: left;
 }
 
 .category-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .category-description {
-  font-size: 16px;
-  font-weight: 400;
-  color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 400;
+    color: #AAAAAA;
 }
-.d-header {
-  background-color: #151a25;
+
+.categories table {
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important;
 }
-.sidebar-section-link-wrapper .sidebar-section-link {
-  color: #c5b16f;
+
+.categories table tr td {
+    padding: 10px;
+    overflow: hidden;
 }
-.sidebar-wrapper {
-  background-color: #101a2a;
-  color: #c5b16f;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: XXII Centar;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+
+.categories table tr td:first-child {
+    background: linear-gradient(90deg, rgba(30, 37, 51, 0.80) 0%, rgba(22, 28, 40, 0.80) 100%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-.sidebar-footer-wrapper {
-  display: none;
+
+.categories table tr td:last-child {
+    background: rgba(22, 28, 40, 0.80);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
-.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
-.sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
-  color: #c5b16f;
+
+/* ===========================
+   Select Kit Styles
+=========================== */
+.select-kit-header {
+    border: 1px solid rgba(41, 49, 68, 0.90);
+    background-color: #181C26 !important;
+}
+
+.select-kit.combo-box.category-drop .category-drop-header {
+    border: 1px solid rgba(41, 49, 68, 0.90);
+}
+
+.list-controls .combo-box .combo-box-header {
+    border: 1px solid rgba(41, 49, 68, 0.90);
+}
+
+/* ===========================
+   Boxed Element Styles
+=========================== */
+.boxed {
+    border-radius: 10px;
 }
