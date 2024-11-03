@@ -6,6 +6,10 @@
   display: none;
 }
 
+:root {
+  --header_primary-low-mid: #c5b16f;
+}
+
 body {
   background: url($BG_Main);
   background-size: cover;
