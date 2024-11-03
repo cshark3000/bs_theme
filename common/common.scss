@@ -71,11 +71,20 @@ body {
 }
 
 .custom-search-banner-wrap {
-  font-family: "Albertusnova Thin" !important;
-  font-weight: 200 !important;
-  line-height: 48px !important;
-  text-align: center !important;
+  p {
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+  }
 
+  h1 {
+    font-family: "Albertusnova Thin" !important;
+    font-weight: 200 !important;
+    line-height: 48px !important;
+    text-align: center !important;
+  }
   .search-menu {
     .search-menu-container {
       .search-input {
