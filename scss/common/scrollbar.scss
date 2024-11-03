@@ -1,0 +1,32 @@
+.timeline-scrollarea-wrapper {
+  .timeline-date-wrapper .start-date::after,
+  .timeline-date-wrapper .now-date::before {
+    content: " ";
+    background-image: url($scrollbarArrow);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    left: -3.7px;
+  }
+  .timeline-date-wrapper .now-date::before {
+    transform: rotate(180deg);
+  }
+
+  .timeline-scrollarea {
+    border-left: none !important;
+    background-image: url($scrollbarThumb);
+    background-size: 100% 100%;
+    background-position-x: -2.73em;
+    background-repeat: no-repeat;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #b19f63;
+    width: 8px;
+    border-radius: 11px;
+  }
+}

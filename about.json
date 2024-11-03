@@ -14,7 +14,9 @@
     "XXIICentar": "assets/XXIICentar.ttf",
     "nav-divider": "assets/nav-divider.svg",
     "nav-active": "assets/nav-active.svg",
-    "icons-sprite": "assets/svg-icons.svg"
+    "icons-sprite": "assets/svg-icons.svg",
+    "scrollbarArrow": "assets/scrollbar-arrow.svg",
+    "scrollbarThumb": "assets/scrollbar-thumb.svg"
   },
   "color_schemes": {
     "BS_Color": {
