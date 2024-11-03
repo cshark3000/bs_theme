@@ -13,7 +13,8 @@
     "rock_pattern": "assets/rock_pattern.png",
     "XXIICentar": "assets/XXIICentar.ttf",
     "nav-divider": "assets/nav-divider.svg",
-    "nav-active": "assets/nav-active.svg"
+    "nav-active": "assets/nav-active.svg",
+    "icons-sprite": "assets/svg-icons.svg"
   },
   "color_schemes": {
     "BS_Color": {

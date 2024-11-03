@@ -62,56 +62,13 @@ body {
 /* ===========================
    Sidebar Styles
 =========================== */
-.sidebar-wrapper {
-  background-color: #101a2a;
-  background: url($rock_pattern);
-  color: #c5b16f;
-  leading-trim: both;
-  text-edge: cap;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  opacity: 1 !important;
-}
-
-.sidebar-footer-wrapper {
-  display: none;
-}
-
-.sidebar-section-link-wrapper .sidebar-section-link {
-  color: #c5b16f;
-}
-
-.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
-.sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
-  color: #c5b16f;
-}
-
-/* ===========================
-   Sidebar Text Styles
-=========================== */
-.sidebar-section-header-text {
-  font-size: 16px;
-}
-
-.sidebar-section-link-content-text {
-  font-size: 17px;
-}
-
-.sidebar-section-header-text,
-.sidebar-section-link-content-text {
-  color: #c5b16f;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-}
+@import "common/sidebar.scss";
 
 /* ===========================
    Category Styles
 =========================== */
-@import "categories/categories.scss";
-@import "custom-category-boxes/custom-category-boxes.scss";
+@import "common/categories.scss";
+@import "common/custom-category-boxes.scss";
 
 /* ===========================
    Select Kit Styles
