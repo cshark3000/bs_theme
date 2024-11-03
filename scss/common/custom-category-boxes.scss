@@ -292,6 +292,13 @@
     }
     .category-box-heading {
       margin-bottom: 4px;
+      a {
+        h3 {
+          div {
+            display: none;
+          }
+        }
+      }
     }
     h3 {
       font-size: 1em;
