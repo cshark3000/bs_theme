@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: XXII Centar;
+  font-family: "Noto Sans";
 }
 
 #main-outlet-wrapper {
@@ -44,6 +44,20 @@ body {
   }
 }
 
+@font-face {
+  font-family: "XXII Centar Regular";
+  src: url($XXIICentarRegular) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albertusnova Thin";
+  src: url($AlbertusnovaThin) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ===========================
    Header Styles
 =========================== */
@@ -57,7 +71,7 @@ body {
 }
 
 .custom-search-banner-wrap {
-  font-family: Albertus Nova !important;
+  font-family: "Albertusnova Thin" !important;
   font-weight: 200 !important;
   line-height: 48px !important;
   text-align: center !important;
