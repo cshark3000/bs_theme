@@ -20,17 +20,22 @@
     border-left: none !important;
     &::before {
       content: " ";
+      position: absolute;
       width: 8px;
-      height: 100%;
+      height: calc(100% + 8px);
+      top: -6px;
+      left: -4px;
       background-image: url($scrollbarThumb);
       background-size: contain;
       background-repeat: no-repeat;
+      background-position: top center;
+      display: block;
     }
-  }
 
-  &::-webkit-scrollbar-track {
-    background-color: #b19f63;
-    width: 8px;
-    border-radius: 11px;
+    .timeline-scroller {
+      .timeline-handle {
+        background-color: #b19f63 !important;
+      }
+    }
   }
 }
