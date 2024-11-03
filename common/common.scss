@@ -8,6 +8,10 @@
 
 :root {
   --header_primary-low-mid: #c5b16f;
+  --d-nav-color--active: #d5bc75;
+  --d-icon-active: #d7c27d;
+  --d-icon-placeholder: #5b6168;
+  --primary: #d6d6d6;
 }
 
 body {
@@ -26,7 +30,13 @@ body {
 
 .btn {
   background-color: rgba(10, 20, 32, 0.7);
-  color: #d7c27d;
+  color: var(--d-icon-active);
+  &.d-icon {
+    color: var(--d-icon-active);
+    &.d-icon-search {
+      color: var(--d-icon-placeholder);
+    }
+  }
 }
 
 /* ===========================
