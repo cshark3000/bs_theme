@@ -36,6 +36,9 @@ body {
     &.d-icon-search {
       color: var(--d-icon-placeholder);
     }
+    &.d-icon-plus {
+      color: var(--d-icon-active);
+    }
   }
 }
 
