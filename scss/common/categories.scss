@@ -73,6 +73,7 @@
     background-image: url($nav-divider);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .nav-pills {
@@ -93,8 +94,8 @@
             bottom: 0px;
             background-image: url($nav-active);
             background-position: center;
-            background-size: cover;
-
+            background-size: contain;
+            background-repeat: no-repeat;
             background-color: transparent;
           }
         }

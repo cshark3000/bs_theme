@@ -139,3 +139,18 @@ body {
 .boxed {
   border-radius: 10px;
 }
+
+table {
+  tbody {
+    &.topic-list-body {
+      border-top: 1px solid;
+      border-image-source: linear-gradient(
+        270deg,
+        #ffebb3 0%,
+        #776030 35%,
+        #776030 65%,
+        #ffebb3 100%
+      );
+    }
+  }
+}
