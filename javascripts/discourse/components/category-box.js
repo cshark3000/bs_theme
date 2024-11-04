@@ -3,7 +3,7 @@ import { htmlSafe } from "@ember/template";
 
 export default class extends Component {
   get backgroundColor() {
-    return htmlSafe(`background-color: #${this.args.category.color}`);
+    return htmlSafe(`background-color: red;`);
   }
 
   get getAbbreviation() {
