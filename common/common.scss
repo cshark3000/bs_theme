@@ -3,102 +3,103 @@
 =========================== */
 
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 :root {
-    --header_primary-low-mid: #c5b16f;
-    --d-nav-color--active: #d5bc75;
-    --d-icon-active: #d7c27d;
-    --d-icon-placeholder: #5b6168;
-    --primary: #d6d6d6;
-    --primary-very-low: #151a25;
+  --header_primary-low-mid: #c5b16f;
+  --d-nav-color--active: #d5bc75;
+  --d-icon-active: #d7c27d;
+  --d-icon-placeholder: #5b6168;
+  --primary: #d6d6d6;
+  --primary-low: rgba(10, 20, 32, 0.7);
+  --primary-very-low: #151a25;
 }
 
 body {
-    background: url($BG_Main);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Noto Sans", sans-serif;
+  background: url($BG_Main);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Noto Sans", sans-serif;
 }
 
 #main-outlet-wrapper {
-    background-color: rgba(16, 21, 32, 0.9);
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(0.3rem);
+  background-color: rgba(16, 21, 32, 0.9);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(0.3rem);
 }
 
 .btn {
-    color: var(--d-icon-active);
-    svg {
-        &.d-icon {
-            color: var(--d-icon-active);
-            &.d-icon-search {
-                color: var(--d-icon-placeholder);
-            }
-            &.d-icon-plus {
-                color: var(--d-icon-active);
-            }
-        }
+  color: var(--d-icon-active);
+  svg {
+    &.d-icon {
+      color: var(--d-icon-active);
+      &.d-icon-search {
+        color: var(--d-icon-placeholder);
+      }
+      &.d-icon-plus {
+        color: var(--d-icon-active);
+      }
     }
+  }
 }
 
 @font-face {
-    font-family: "XXII Centar Regular";
-    src: url($XXIICentarRegular) format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "XXII Centar Regular";
+  src: url($XXIICentarRegular) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Albertusnova Thin";
-    src: url($AlbertusnovaThin) format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Albertusnova Thin";
+  src: url($AlbertusnovaThin) format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ===========================
    Header Styles
 =========================== */
 .d-header {
-    background-color: #151a25 !important;
+  background-color: #151a25 !important;
 }
 
 .d-header .wrap {
-    opacity: 1;
-    background-color: #151a25 !important;
+  opacity: 1;
+  background-color: #151a25 !important;
 }
 
 .custom-search-banner-wrap {
-    p {
-        font-family: "Noto Sans", sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: center;
-    }
+  p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+  }
 
-    h1 {
-        font-family: "Albertusnova Thin" !important;
-        font-weight: 200 !important;
-        line-height: 48px !important;
-        text-align: center !important;
-    }
-    .search-menu {
-        .search-menu-container {
-            .search-input {
-                background-color: rgba(11, 13, 15, 0.52);
-                border-image-source: linear-gradient(
-                    180deg,
-                    rgba(49, 61, 75, 1) 0%,
-                    rgba(29, 38, 48, 1) 100%
-                ) !important;
+  h1 {
+    font-family: "Albertusnova Thin" !important;
+    font-weight: 200 !important;
+    line-height: 48px !important;
+    text-align: center !important;
+  }
+  .search-menu {
+    .search-menu-container {
+      .search-input {
+        background-color: rgba(11, 13, 15, 0.52);
+        border-image-source: linear-gradient(
+          180deg,
+          rgba(49, 61, 75, 1) 0%,
+          rgba(29, 38, 48, 1) 100%
+        ) !important;
 
-                border: 1px solid;
-            }
-        }
+        border: 1px solid;
+      }
     }
+  }
 }
 
 /* ===========================
@@ -121,38 +122,38 @@ body {
    Select Kit Styles
 =========================== */
 .select-kit-header {
-    border: 1px solid rgba(41, 49, 68, 0.9) !important;
-    background-color: #181c26 !important;
+  border: 1px solid rgba(41, 49, 68, 0.9) !important;
+  background-color: #181c26 !important;
 }
 
 .select-kit.combo-box.category-drop .category-drop-header {
-    border: 1px solid rgba(41, 49, 68, 0.9) !important;
+  border: 1px solid rgba(41, 49, 68, 0.9) !important;
 }
 
 .list-controls .combo-box .combo-box-header {
-    border: 1px solid rgba(41, 49, 68, 0.9) !important;
+  border: 1px solid rgba(41, 49, 68, 0.9) !important;
 }
 
 /* ===========================
    Boxed Element Styles
 =========================== */
 .boxed {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 table {
-    tbody {
-        &.topic-list-body {
-            border-top: 1px solid;
-            border-image-source: linear-gradient(
-                270deg,
-                #ffebb3 0%,
-                #776030 35%,
-                #776030 65%,
-                #ffebb3 100%
-            );
-        }
+  tbody {
+    &.topic-list-body {
+      border-top: 1px solid;
+      border-image-source: linear-gradient(
+        270deg,
+        #ffebb3 0%,
+        #776030 35%,
+        #776030 65%,
+        #ffebb3 100%
+      );
     }
+  }
 }
 
 /* ===========================
@@ -160,5 +161,5 @@ table {
 =========================== */
 
 .user-content {
-    background: none;
+  background: none;
 }

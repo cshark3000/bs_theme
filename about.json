@@ -21,9 +21,9 @@
   },
   "color_schemes": {
     "BS_Color": {
-      "primary": "FFFFFF",
+      "primary": "d6d6d6",
       "secondary": "151A25",
-      "tertiary": "C5B16F",
+      "tertiary": "2B3446",
       "quaternary": "e45735",
       "header_background": "1E2533",
       "header_primary": "7e6f3d",
@@ -31,7 +31,7 @@
       "danger": "BD2E3D",
       "success": "007D34",
       "love": "1969AD",
-      "selected": "776030",
+      "selected": "2B3446",
       "hover": "2B3446"
     }
   },
