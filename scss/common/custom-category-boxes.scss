@@ -89,7 +89,7 @@
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr;
     .group-box {
-        background-color: linear-gradient(
+        background: linear-gradient(
             90deg,
             rgba(30, 37, 51, 0.8) 0%,
             rgba(22, 28, 40, 0.8) 100%
@@ -167,7 +167,7 @@
     .category-box {
         display: flex;
         flex-grow: 1;
-        background-color: linear-gradient(
+        background: linear-gradient(
             90deg,
             rgba(30, 37, 51, 0.8) 0%,
             rgba(22, 28, 40, 0.8) 100%
