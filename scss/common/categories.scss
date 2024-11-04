@@ -104,3 +104,15 @@
     }
   }
 }
+
+.select-kit .select-kit-header .selected-name {
+  span {
+    span {
+      .badge-category {
+        &::before {
+          content: none !important;
+        }
+      }
+    }
+  }
+}
