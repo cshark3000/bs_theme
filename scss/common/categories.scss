@@ -92,9 +92,10 @@
             height: 5px;
             position: absolute;
             bottom: 0px;
+            border-bottom: 1px solid #d5bc75;
             background-image: url($nav-active);
             background-position: center;
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
             background-color: transparent;
           }

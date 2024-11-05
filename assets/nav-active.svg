@@ -1,29 +1,14 @@
 <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="86"
+  width="10"
   height="5"
+  viewBox="0 0 10 5"
   fill="none"
-  viewBox="0 0 86 5"
+  xmlns="http://www.w3.org/2000/svg"
 >
-  <path fill="url(#paint0_linear_38_2846)" d="M0 4h48v1H0z" />
   <path
-    fill="#D5BC75"
     fill-rule="evenodd"
-    d="m43 3.293.707.707h1.879L43 1.414 40.414 4h1.879L43 3.293ZM38 5l5-5 5 5H38Z"
     clip-rule="evenodd"
+    d="M5 3.293L5.707 4H7.586L5 1.414L2.414 4H4.293L5 3.293ZM0 5L5 0L10 5H0Z"
+    fill="#D5BC75"
   />
-  <path fill="#D5BC75" d="M38 4h48v1H38z" />
-  <defs>
-    <linearGradient
-      id="paint0_linear_38_2846"
-      x1="0"
-      x2="48"
-      y1="4.5"
-      y2="4.5"
-      gradientUnits="userSpaceOnUse"
-    >
-      <stop stop-color="#D5BC75" />
-      <stop offset="1" stop-color="#D5BC75" />
-    </linearGradient>
-  </defs>
 </svg>
