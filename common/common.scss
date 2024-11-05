@@ -79,6 +79,14 @@ body {
   }
 }
 
+[data-content][data-identifier="user-tip"] .btn-primary {
+  color: var(--d-icon-active) !important;
+}
+
+[data-content][data-identifier="user-tip"] {
+  background-color: #cccccc;
+}
+
 /* ===========================
    Header Styles
 =========================== */
