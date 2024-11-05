@@ -90,6 +90,11 @@ body {
   opacity: 1;
   background-color: #151a25 !important;
 }
+.footer-message {
+  * > a {
+    color: #4c76ca;
+  }
+}
 
 .custom-search-banner-wrap {
   p {
