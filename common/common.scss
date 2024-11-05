@@ -29,6 +29,25 @@ body {
 #main-outlet-wrapper {
   background-color: rgba(16, 21, 32, 0.9);
   backdrop-filter: blur(0.8em);
+  padding-right: 2em;
+}
+
+.discourse-no-touch .d-header-icons .icon,
+.discourse-no-touch .header-sidebar-toggle button {
+  &:hover,
+  &:active {
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  svg {
+    &:hover {
+      color: #f9df94 !important;
+    }
+    &:active {
+      color: #fff5d9 !important;
+    }
+  }
 }
 
 .btn {
