@@ -23,12 +23,13 @@
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link {
-  color: #c5b16f;
+  color: var(--sidebar-icon-color) !important;
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon,
-.sidebar-section-link-wrapper .sidebar-section-link-prefix.span {
-  color: #c5b16f;
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.span,
+.sidebar-section-wrapper .sidebar-section-header-caret .d-icon {
+  color: var(--sidebar-icon-color) !important;
 }
 
 /* ===========================
