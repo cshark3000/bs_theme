@@ -174,14 +174,22 @@ body {
 table {
   tbody {
     &.topic-list-body {
-      border-top: 1px solid;
-      border-image-source: linear-gradient(
-        270deg,
-        #ffebb3 0%,
-        #776030 35%,
-        #776030 65%,
-        #ffebb3 100%
-      );
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(
+          270deg,
+          #ffebb3 0%,
+          #776030 35%,
+          #776030 65%,
+          #ffebb3 100%
+        );
+      }
+      border: none;
+      position: relative;
     }
   }
 }
