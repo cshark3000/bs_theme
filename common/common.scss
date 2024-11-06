@@ -22,7 +22,9 @@
 
 a,
 .more-topics__browse-more a,
-.more-topics__browse-more a:visited {
+.more-topics__browse-more a:visited,
+.empty-state-body p a,
+.empty-state-body p a:visited {
   color: #f9df94;
 }
 
