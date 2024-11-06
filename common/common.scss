@@ -156,7 +156,13 @@ body {
   }
 }
 
-.btn {
+.btn,
+.user-menu.revamped .tabs-list .btn {
+  &.active {
+    background-color: #171e2c !important;
+    color: white !important;
+    border: 1px solid #f9df94;
+  }
   .d-button-label {
     color: white;
   }
@@ -186,7 +192,7 @@ body {
   }
   svg {
     &.d-icon {
-      color: var(--d-icon-active);
+      color: #f9df94 !important;
       &.d-icon-search {
         color: var(--d-icon-placeholder);
       }
@@ -197,6 +203,11 @@ body {
   }
 }
 
+.user-menu .quick-access-panel .read {
+  > * {
+    color: white;
+  }
+}
 [data-content][data-identifier="user-tip"] .btn-primary {
   color: var(--d-icon-active) !important;
 }
