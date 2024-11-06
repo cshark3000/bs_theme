@@ -156,7 +156,7 @@ body {
   }
 }
 
-.btn,
+.btn:not(.sidebar-section-header),
 .user-menu.revamped .tabs-list .btn {
   &.active {
     background-color: #171e2c !important;

@@ -80,11 +80,7 @@
     li {
       a {
         &.active {
-          background: linear-gradient(
-            0deg,
-            #0e3d65 0%,
-            rgba(14, 61, 101, 0) 100%
-          );
+          background: linear-gradient(0deg, #0e3d65 0%, #0e3d6500 100%);
 
           &::after {
             content: "";
@@ -102,11 +98,7 @@
         }
 
         &:hover {
-          background-color: linear-gradient(
-            0deg,
-            #0e3d65 0%,
-            rgba(14, 61, 101, 0) 100%
-          );
+          background: linear-gradient(0deg, #0e3d65 0%, #0e3d6500 100%);
           color: var(--d-nav-color--active);
         }
       }
