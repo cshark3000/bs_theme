@@ -64,7 +64,8 @@ body {
   }
 }
 
-.topic-list .topic-list-item-separator .topic-list-data {
+.topic-list .topic-list-item-separator .topic-list-data,
+.small-action.topic-post-visited .topic-post-visited-line {
   border-color: #1ca9c9 !important;
   span {
     color: #1ca9c9 !important;
