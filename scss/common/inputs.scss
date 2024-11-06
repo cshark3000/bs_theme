@@ -1,0 +1,17 @@
+#reply-control {
+  * > .d-icon {
+    color: #b19f63 !important;
+  }
+  * > .action-title a {
+    color: #ffffff;
+  }
+  .grippie {
+    padding: 0.5px 0 !important;
+    background: linear-gradient(
+      270deg,
+      rgba(119, 96, 48, 0.6) 0%,
+      rgba(255, 235, 179, 0.6) 49.21%,
+      rgba(119, 96, 48, 0.6) 100%
+    );
+  }
+}

@@ -252,6 +252,8 @@ body {
 /* ===========================
    Select Kit Styles
 =========================== */
+@import "common/inputs.scss";
+
 .select-kit-header {
   border: 1px solid rgba(41, 49, 68, 0.9) !important;
   background-color: #181c26 !important;
