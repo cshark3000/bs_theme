@@ -20,7 +20,9 @@
   display: none;
 }
 
-a {
+a,
+.more-topics__browse-more a,
+.more-topics__browse-more a:visited {
   color: #f9df94;
 }
 
