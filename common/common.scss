@@ -64,6 +64,13 @@ body {
   }
 }
 
+.topic-list .topic-list-item-separator .topic-list-data {
+  border-color: #1ca9c9 !important;
+  span {
+    color: #1ca9c9 !important;
+  }
+}
+
 .d-header-icons {
   li {
     &.chat-header-icon {
