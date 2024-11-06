@@ -9,7 +9,6 @@
   "maximum_discourse_version": null,
   "assets": {
     "BG_Main": "assets/BG_Main.png",
-    "Chat_icon": "assets/Chat_icon.png",
     "rock_pattern": "assets/rock_pattern.png",
     "XXIICentarRegular": "assets/XXIICentarRegular.ttf",
     "AlbertusnovaThin": "assets/albertusnovathin.otf",
@@ -17,7 +16,9 @@
     "nav-active": "assets/nav-active.svg",
     "icons-sprite": "assets/svg-icons.svg",
     "scrollbarArrow": "assets/scrollbar-arrow.svg",
-    "scrollbarThumb": "assets/scrollbar-thumb.svg"
+    "scrollbarThumb": "assets/scrollbar-thumb.svg",
+    "searchHover": "assets/search_hover.svg",
+    "searchActive": "assets/search_active.svg"
   },
   "color_schemes": {
     "BS_Color": {
