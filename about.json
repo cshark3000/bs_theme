@@ -18,7 +18,9 @@
     "scrollbarArrow": "assets/scrollbar-arrow.svg",
     "scrollbarThumb": "assets/scrollbar-thumb.svg",
     "searchHover": "assets/search_hover.svg",
-    "searchActive": "assets/search_active.svg"
+    "searchActive": "assets/search_active.svg",
+    "chatHover": "assets/chat_hover.svg",
+    "chatActive": "assets/chat_active.svg"
   },
   "color_schemes": {
     "BS_Color": {
