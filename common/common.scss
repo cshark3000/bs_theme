@@ -129,6 +129,33 @@ body {
   }
 }
 
+.header-sidebar-toggle button {
+  position: relative;
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+  }
+  &:hover {
+    &::before {
+      content: " ";
+      background-image: url($barsHover);
+    }
+  }
+  &:active {
+    &::before {
+      content: " ";
+      background-image: url($barsActive);
+    }
+  }
+}
+
 .btn {
   color: var(--d-icon-active);
   svg {
