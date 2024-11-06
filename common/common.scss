@@ -157,7 +157,33 @@ body {
 }
 
 .btn {
-  color: var(--d-icon-active);
+  .d-button-label {
+    color: white;
+  }
+  &:hover {
+    background-color: #273653 !important;
+    border: 1px solid #f9df94;
+    svg {
+      &.d-icon {
+        color: #f9df94 !important;
+      }
+    }
+    .d-button-label {
+      color: #f9df94 !important;
+    }
+  }
+  &:active {
+    background-color: #f9df94 !important;
+    background-image: none !important;
+    svg {
+      &.d-icon {
+        color: #1e2533 !important;
+      }
+    }
+    .d-button-label {
+      color: #1e2533 !important;
+    }
+  }
   svg {
     &.d-icon {
       color: var(--d-icon-active);
