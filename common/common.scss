@@ -52,6 +52,7 @@ body {
   &:active {
     background-color: transparent !important;
     background-image: none !important;
+    border-color: transparent !important;
   }
 
   svg {
@@ -156,7 +157,7 @@ body {
   }
 }
 
-.btn:not(.sidebar-section-header),
+.btn:not(.sidebar-section-header, .btn-sidebar-toggle, #search-button),
 .user-menu.revamped .tabs-list .btn {
   &.active {
     background-color: #171e2c !important;
@@ -165,6 +166,9 @@ body {
   }
   .d-button-label {
     color: white;
+  }
+  &#create-topic .d-button-label {
+    color: #d7c27d;
   }
   &:hover {
     background-color: #273653 !important;
