@@ -296,6 +296,36 @@ body {
   background-color: #181c26 !important;
 }
 
+.select-kit.combo-box .select-kit-filter .filter-icon,
+.select-kit .select-kit-row .discourse-tag {
+  color: #cccccc !important;
+}
+.select-kit.single-select .select-kit-filter.is-expanded {
+  border-bottom: none !important;
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      270deg,
+      rgba(119, 96, 48, 0) 0%,
+      rgba(119, 96, 48, 0.4) 25%,
+      rgba(255, 235, 179, 0.7) 50%,
+      rgba(119, 96, 48, 0.4) 75%,
+      rgba(119, 96, 48, 0) 100%
+    );
+  }
+}
+
+.select-kit.single-select.is-expanded .select-kit-header:not(.btn),
+.select-kit.single-select .select-kit-header:not(.btn):active {
+  outline: 1px solid #b19f6380 !important;
+  outline-offset: -1px !important;
+}
+
 .select-kit.combo-box.category-drop .category-drop-header {
   border: 1px solid rgba(41, 49, 68, 0.9) !important;
 }

@@ -118,6 +118,18 @@
   }
 }
 
+.select-kit.is-expanded .select-kit-body {
+  position: absolute !important;
+  transform: none !important;
+  top: 100% !important;
+}
+.select-kit.combo-box.category-drop .category-drop-header[data-value=""],
+.select-kit.combo-box.tag-drop .selected-name,
+.select-kit.combo-box.tag-drop .caret-icon,
+.select-kit.combo-box.category-drop .caret-icon {
+  color: #cecece !important;
+}
+
 .category-heading {
   display: flex;
   align-items: center;
