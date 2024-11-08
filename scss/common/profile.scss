@@ -1,4 +1,5 @@
-.user-main .about .details {
+.user-main .about .details,
+.archetype-private_message .topic-map section {
   background: none !important;
 }
 
@@ -15,4 +16,8 @@
       color: var(--primary-high);
     }
   }
+}
+
+.archetype-private_message .regular.contents {
+  border: none;
 }
