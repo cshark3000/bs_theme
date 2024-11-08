@@ -371,6 +371,13 @@ table {
   }
   tbody {
     &.topic-list-body {
+      .topic-list-item,
+      tr {
+        border-bottom: none;
+        &:first-child {
+          border-top: 8px solid transparent;
+        }
+      }
       &::before {
         content: " ";
         position: absolute;
