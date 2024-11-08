@@ -456,7 +456,7 @@ Additional SVG icons
 
   <!--Колокольчики-->
   <!--Уведомлять-->
-  <symbol id="bs-bell" width="12" height="12" fill="none" viewBox="0 0 12 12">
+  <symbol id="bs-bell" width="16" height="16" fill="none" viewBox="0 0 12 12">
     <path
       fill="currentColor"
       d="M3.2.96 2.4.12C1.029 1.2.114 2.88 0 4.8h1.143C1.257 3.18 2 1.8 3.2.96Zm7.657 3.84H12c-.114-1.92-.971-3.6-2.343-4.68l-.8.84c1.143.84 1.886 2.22 2 3.84Zm-1.143.3c0-1.86-1.2-3.36-2.857-3.78V.9c0-.48-.4-.9-.857-.9-.457 0-.857.42-.857.9v.42c-1.657.42-2.857 1.92-2.857 3.78v3.3L1.143 9.6v.6h9.714v-.6L9.714 8.4V5.1ZM6 12h.229c.4-.06.685-.36.8-.72.057-.12.114-.3.114-.48H4.857c0 .66.514 1.2 1.143 1.2Z"
@@ -465,23 +465,23 @@ Additional SVG icons
   <!--Следить-->
   <symbol
     id="bs-far-bell"
-    width="12"
-    height="12"
+    width="14"
+    height="16"
     fill="none"
-    viewBox="0 0 12 12"
+    viewBox="0 0 9 12"
   >
     <path
       fill="currentColor"
-      d="M3.2.96 2.4.12C1.029 1.2.114 2.88 0 4.8h1.143C1.257 3.18 2 1.8 3.2.96Zm7.657 3.84H12c-.114-1.92-.971-3.6-2.343-4.68l-.8.84c1.143.84 1.886 2.22 2 3.84Zm-1.143.3c0-1.86-1.2-3.36-2.857-3.78V.9c0-.48-.4-.9-.857-.9-.457 0-.857.42-.857.9v.42c-1.657.42-2.857 1.92-2.857 3.78v3.3L1.143 9.6v.6h9.714v-.6L9.714 8.4V5.1ZM6 12h.229c.4-.06.685-.36.8-.72.057-.12.114-.3.114-.48H4.857c0 .66.514 1.2 1.143 1.2Z"
+      d="M8.824 5.1c0-1.86-1.236-3.36-2.942-3.78V.9C5.882.42 5.471 0 5 0c-.47 0-.882.42-.882.9v.42A3.846 3.846 0 0 0 1.176 5.1v3.3L0 9.6v.6h10v-.6L8.824 8.4V5.1ZM5 12h.235c.412-.06.706-.36.824-.72.059-.12.117-.3.117-.48H3.824c0 .66.529 1.2 1.176 1.2Z"
     />
   </symbol>
   <!--Наблюдать-->
   <symbol
     id="bs-bell-explanation"
-    width="10"
-    height="12"
+    width="14"
+    height="16"
     fill="none"
-    viewBox="0 0 10 12"
+    viewBox="0 0 9 12"
   >
     <path
       fill="currentColor"
@@ -493,10 +493,10 @@ Additional SVG icons
   <!--Наблюдать за первым сообщением-->
   <symbol
     id="bs-bell-one"
-    width="10"
-    height="12"
+    width="14"
+    height="16"
     fill="none"
-    viewBox="0 0 10 12"
+    viewBox="0 0 9 12"
   >
     <path
       fill="currentColor"
@@ -508,10 +508,10 @@ Additional SVG icons
   <!--Без уведомлений-->
   <symbol
     id="bs-bell-slash"
-    width="11"
-    height="12"
+    width="16"
+    height="16"
     fill="none"
-    viewBox="0 0 11 12"
+    viewBox="0 0 12 12"
   >
     <path
       fill="currentColor"
