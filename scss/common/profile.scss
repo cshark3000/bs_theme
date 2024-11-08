@@ -1,3 +1,18 @@
 .user-main .about .details {
   background: none !important;
 }
+
+.user-stream .item,
+.user-stream .user-stream-item {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.user-stream .stream-topic-title {
+  .title {
+    a,
+    a:visited {
+      color: var(--primary-high);
+    }
+  }
+}
