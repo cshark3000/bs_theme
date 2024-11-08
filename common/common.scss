@@ -20,14 +20,6 @@
   display: none;
 }
 
-a,
-.more-topics__browse-more a,
-.more-topics__browse-more a:visited,
-.empty-state-body p a,
-.empty-state-body p a:visited {
-  color: #f9df94;
-}
-
 :root {
   --header_primary-low-mid: #c5b16f;
   --d-nav-color--active: #d5bc75;
@@ -54,25 +46,6 @@ body {
   padding-right: 2em;
 }
 
-.discourse-no-touch .d-header-icons .icon,
-.discourse-no-touch .header-sidebar-toggle button {
-  &:hover,
-  &:active {
-    background-color: transparent !important;
-    background-image: none !important;
-    border-color: transparent !important;
-  }
-
-  svg {
-    &:hover {
-      color: #f9df94 !important;
-    }
-    &:active {
-      color: #fff5d9 !important;
-    }
-  }
-}
-
 .topic-list .topic-list-item-separator .topic-list-data,
 .small-action.topic-post-visited .topic-post-visited-line {
   border-color: #1ca9c9 !important;
@@ -81,208 +54,15 @@ body {
   }
 }
 
-.d-header-icons {
-  li {
-    &.chat-header-icon {
-      position: relative;
-      &::before {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-position: center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-        filter: blur(3px);
-      }
-      &:hover {
-        background-color: transparent !important;
-        &::before {
-          content: " ";
-          background-image: url($chatHover);
-        }
-      }
-      &:active {
-        &::before {
-          content: " ";
-          background-image: url($chatActive);
-        }
-      }
-    }
-  }
-  #search-button {
-    position: relative;
-    &::before {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-position: center;
-      background-size: 60%;
-      background-repeat: no-repeat;
-      filter: blur(3px);
-    }
-    &:hover {
-      &::before {
-        content: " ";
-        background-image: url($searchHover);
-      }
-    }
-    &:active {
-      &::before {
-        content: " ";
-        background-image: url($searchActive);
-      }
-    }
-  }
-}
-
-.header-sidebar-toggle button {
-  position: relative;
-  &::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    filter: blur(3px);
-  }
-  &:hover {
-    &::before {
-      content: " ";
-      background-image: url($barsHover);
-    }
-  }
-  &:active {
-    &::before {
-      content: " ";
-      background-image: url($barsActive);
-    }
-  }
-}
-
-.btn:not(
-    .sidebar-section-header,
-    .btn-sidebar-toggle,
-    #search-button,
-    .show-advanced-search,
-    .search-icon
-  ),
-.user-menu.revamped .tabs-list .btn {
-  &.active {
-    background-color: #171e2c;
-    color: white !important;
-    border: 1px solid #f9df94;
-  }
-  .d-button-label {
-    color: white;
-  }
-  &#create-topic .d-button-label {
-    color: #d7c27d;
-  }
-  &:hover {
-    background-color: #273653;
-    border: 1px solid #f9df94;
-    svg {
-      &.d-icon {
-        color: #f9df94 !important;
-      }
-    }
-    .d-button-label {
-      color: #f9df94 !important;
-    }
-  }
-  &:active {
-    background-color: #f9df94;
-    background-image: none;
-    svg {
-      &.d-icon {
-        color: #1e2533 !important;
-      }
-    }
-    .d-button-label {
-      color: #1e2533 !important;
-    }
-  }
-  svg {
-    &.d-icon {
-      color: #f9df94;
-      &.d-icon-search {
-        color: var(--d-icon-placeholder);
-      }
-      &.d-icon-plus {
-        color: var(--d-icon-active);
-      }
-    }
-  }
-}
-
-.user-menu .quick-access-panel .read {
-  > * {
-    color: white;
-  }
-}
-[data-content][data-identifier="user-tip"] .btn-primary {
-  color: var(--d-icon-active) !important;
-}
-
-[data-content][data-identifier="user-tip"] {
-  background-color: #cccccc;
-}
+/* ===========================
+   Buttons & Icons Styles
+=========================== */
+@import "common/buttons.scss";
 
 /* ===========================
    Header Styles
 =========================== */
-.d-header {
-  background-color: #151a25 !important;
-}
-
-.d-header .wrap {
-  opacity: 1;
-  background-color: #151a25 !important;
-}
-.footer-message {
-  * > a {
-    color: #4c76ca;
-  }
-}
-
-.custom-search-banner-wrap {
-  p {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-  }
-
-  h1 {
-    font-family: "Albertusnova Thin" !important;
-    font-weight: 200 !important;
-    line-height: 48px !important;
-    text-align: center !important;
-  }
-  .search-menu {
-    .search-menu-container {
-      .search-input {
-        background-color: rgba(11, 13, 15, 0.52);
-        border-image-source: linear-gradient(
-            180deg,
-            rgba(49, 61, 75, 1) 0%,
-            rgba(29, 38, 48, 1) 100%
-          )
-          1/2px;
-
-        border: 1px solid;
-      }
-    }
-  }
-}
+@import "common/header.scss";
 
 /* ===========================
    Sidebar Styles
@@ -310,98 +90,7 @@ body {
 =========================== */
 @import "common/inputs.scss";
 
-.select-kit-header {
-  border: 1px solid rgba(41, 49, 68, 0.9) !important;
-  background-color: #181c26 !important;
-}
-
-.select-kit.combo-box .select-kit-filter .filter-icon,
-.select-kit .select-kit-row .discourse-tag {
-  color: #cccccc !important;
-}
-.select-kit.single-select .select-kit-filter.is-expanded {
-  border-bottom: none !important;
-  &::after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background: linear-gradient(
-      270deg,
-      rgba(119, 96, 48, 0) 0%,
-      rgba(119, 96, 48, 0.4) 25%,
-      rgba(255, 235, 179, 0.7) 50%,
-      rgba(119, 96, 48, 0.4) 75%,
-      rgba(119, 96, 48, 0) 100%
-    );
-  }
-}
-
-.select-kit.single-select.is-expanded .select-kit-header:not(.btn),
-.select-kit.single-select .select-kit-header:not(.btn):active {
-  outline: 1px solid #b19f6380 !important;
-  outline-offset: -1px !important;
-}
-
-.select-kit.combo-box.category-drop .category-drop-header {
-  border: 1px solid rgba(41, 49, 68, 0.9) !important;
-}
-
-.list-controls .combo-box .combo-box-header {
-  border: 1px solid rgba(41, 49, 68, 0.9) !important;
-}
-
 /* ===========================
-   Boxed Element Styles
+   Admin Styles
 =========================== */
-.boxed {
-  border-radius: 10px;
-}
-
-table {
-  th {
-    color: #d6d6d6;
-    font-family: "XXII Centar Regular";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-  }
-  tbody {
-    &.topic-list-body {
-      .topic-list-item,
-      tr {
-        border-bottom: none;
-        &:first-child {
-          border-top: 8px solid transparent;
-        }
-      }
-      &::before {
-        content: " ";
-        position: absolute;
-        top: 0;
-        height: 1px;
-        width: 100%;
-        background: linear-gradient(
-          270deg,
-          #ffebb3 0%,
-          #776030 35%,
-          #776030 65%,
-          #ffebb3 100%
-        );
-      }
-      border: none;
-      position: relative;
-    }
-  }
-}
-
-/* ===========================
-   User Content Styles
-=========================== */
-
-.user-content {
-  background: none;
-}
+@import "common/admin.scss";

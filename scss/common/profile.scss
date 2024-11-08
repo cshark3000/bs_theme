@@ -21,3 +21,20 @@
 .archetype-private_message .regular.contents {
   border: none;
 }
+
+.user-content {
+  background: none;
+}
+
+.user-menu .quick-access-panel .read {
+  > * {
+    color: white;
+  }
+}
+[data-content][data-identifier="user-tip"] .btn-primary {
+  color: var(--d-icon-active) !important;
+}
+
+[data-content][data-identifier="user-tip"] {
+  background-color: #cccccc;
+}
