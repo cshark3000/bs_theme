@@ -456,273 +456,72 @@ Additional SVG icons
 
   <!--Колокольчики-->
   <!--Уведомлять-->
+  <symbol id="bs-bell" width="12" height="12" fill="none" viewBox="0 0 12 12">
+    <path
+      fill="currentColor"
+      d="M3.2.96 2.4.12C1.029 1.2.114 2.88 0 4.8h1.143C1.257 3.18 2 1.8 3.2.96Zm7.657 3.84H12c-.114-1.92-.971-3.6-2.343-4.68l-.8.84c1.143.84 1.886 2.22 2 3.84Zm-1.143.3c0-1.86-1.2-3.36-2.857-3.78V.9c0-.48-.4-.9-.857-.9-.457 0-.857.42-.857.9v.42c-1.657.42-2.857 1.92-2.857 3.78v3.3L1.143 9.6v.6h9.714v-.6L9.714 8.4V5.1ZM6 12h.229c.4-.06.685-.36.8-.72.057-.12.114-.3.114-.48H4.857c0 .66.514 1.2 1.143 1.2Z"
+    />
+  </symbol>
+  <!--Следить-->
   <symbol
     id="bs-far-bell"
     width="12"
-    height="13"
+    height="12"
     fill="none"
-    viewBox="0 0 12 13"
+    viewBox="0 0 12 12"
   >
-    <g filter="url(#filter0_di_171_2163)">
-      <path
-        fill="currentColor"
-        d="M9.824 5.1c0-1.86-1.236-3.36-2.942-3.78V.9C6.882.42 6.471 0 6 0c-.47 0-.882.42-.882.9v.42A3.846 3.846 0 0 0 2.176 5.1v3.3L1 9.6v.6h10v-.6L9.824 8.4V5.1ZM6 12h.235c.412-.06.706-.36.824-.72.059-.12.117-.3.117-.48H4.824c0 .66.529 1.2 1.176 1.2Z"
-      />
-    </g>
-    <defs>
-      <filter
-        id="filter0_di_171_2163"
-        width="12"
-        height="13"
-        x="0"
-        y="0"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
-        <feBlend
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_171_2163"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_171_2163"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
-        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_171_2163" />
-      </filter>
-    </defs>
-  </symbol>
-  <!--Следить-->
-  <symbol id="bs-bell" width="12" height="13" fill="none" viewBox="0 0 12 13">
-    <g filter="url(#filter0_di_378_3957)">
-      <path
-        fill="currentColor"
-        d="M3.2.96 2.4.12C1.029 1.2.114 2.88 0 4.8h1.143C1.257 3.18 2 1.8 3.2.96Zm7.657 3.84H12c-.114-1.92-.971-3.6-2.343-4.68l-.8.84c1.143.84 1.886 2.22 2 3.84Zm-1.143.3c0-1.86-1.2-3.36-2.857-3.78V.9c0-.48-.4-.9-.857-.9-.457 0-.857.42-.857.9v.42c-1.657.42-2.857 1.92-2.857 3.78v3.3L1.143 9.6v.6h9.714v-.6L9.714 8.4V5.1ZM6 12h.229c.4-.06.685-.36.8-.72.057-.12.114-.3.114-.48H4.857c0 .66.514 1.2 1.143 1.2Z"
-      />
-    </g>
-    <defs>
-      <filter
-        id="filter0_di_378_3957"
-        width="12"
-        height="13"
-        x="0"
-        y="0"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
-        <feBlend
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_378_3957"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_378_3957"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
-        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_378_3957" />
-      </filter>
-    </defs>
+    <path
+      fill="currentColor"
+      d="M3.2.96 2.4.12C1.029 1.2.114 2.88 0 4.8h1.143C1.257 3.18 2 1.8 3.2.96Zm7.657 3.84H12c-.114-1.92-.971-3.6-2.343-4.68l-.8.84c1.143.84 1.886 2.22 2 3.84Zm-1.143.3c0-1.86-1.2-3.36-2.857-3.78V.9c0-.48-.4-.9-.857-.9-.457 0-.857.42-.857.9v.42c-1.657.42-2.857 1.92-2.857 3.78v3.3L1.143 9.6v.6h9.714v-.6L9.714 8.4V5.1ZM6 12h.229c.4-.06.685-.36.8-.72.057-.12.114-.3.114-.48H4.857c0 .66.514 1.2 1.143 1.2Z"
+    />
   </symbol>
   <!--Наблюдать-->
   <symbol
-    id="bs-bell-exclamation"
-    width="12"
-    height="13"
+    id="bs-bell-explanation"
+    width="10"
+    height="12"
     fill="none"
-    viewBox="0 0 12 13"
+    viewBox="0 0 10 12"
   >
-    <g filter="url(#filter0_di_378_3959)">
-      <path
-        fill="currentColor"
-        fill-rule="evenodd"
-        d="M6.857 1.32c1.657.42 2.857 1.92 2.857 3.78v3.3l1.143 1.2v.6H1.143v-.6l1.142-1.2V5.1c0-1.86 1.2-3.36 2.858-3.78V.9c0-.48.4-.9.857-.9.457 0 .857.42.857.9v.42ZM6.228 12H6c-.629 0-1.143-.54-1.143-1.2h2.286c0 .18-.058.36-.115.48-.114.36-.4.66-.8.72Zm-.54-4.547L5.4 4.408V3h1.2v1.408l-.284 3.045H5.69ZM5.449 9V7.85h1.109V9h-1.11Z"
-        clip-rule="evenodd"
-      />
-    </g>
-    <defs>
-      <filter
-        id="filter0_di_378_3959"
-        width="12"
-        height="13"
-        x="0"
-        y="0"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
-        <feBlend
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_378_3959"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_378_3959"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
-        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_378_3959" />
-      </filter>
-    </defs>
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="M5.857 1.32c1.657.42 2.857 1.92 2.857 3.78v3.3l1.143 1.2v.6H.143v-.6l1.142-1.2V5.1c0-1.86 1.2-3.36 2.858-3.78V.9c0-.48.4-.9.857-.9.457 0 .857.42.857.9v.42ZM5.228 12H5c-.629 0-1.143-.54-1.143-1.2h2.286c0 .18-.058.36-.115.48-.114.36-.4.66-.8.72Zm-.54-4.547L4.4 4.408V3h1.2v1.408l-.284 3.045H4.69ZM4.449 9V7.85h1.109V9h-1.11Z"
+      clip-rule="evenodd"
+    />
   </symbol>
   <!--Наблюдать за первым сообщением-->
   <symbol
     id="bs-bell-one"
-    width="12"
-    height="13"
+    width="10"
+    height="12"
     fill="none"
-    viewBox="0 0 12 13"
+    viewBox="0 0 10 12"
   >
-    <g filter="url(#filter0_di_378_3964)">
-      <path
-        fill="currentColor"
-        fill-rule="evenodd"
-        d="M6.857 1.32c1.657.42 2.857 1.92 2.857 3.78v3.3l1.143 1.2v.6H1.143v-.6l1.142-1.2V5.1c0-1.86 1.2-3.36 2.858-3.78V.9c0-.48.4-.9.857-.9.457 0 .857.42.857.9v.42ZM6.228 12H6c-.629 0-1.143-.54-1.143-1.2h2.286c0 .18-.058.36-.115.48-.114.36-.4.66-.8.72Zm-.454-3.642h.612V3.217h-.518l-1.325 1.08.331.425.511-.447c.087-.077.161-.141.224-.194.062-.058.127-.125.194-.202a91.559 91.559 0 0 1-.029.533v3.946Z"
-        clip-rule="evenodd"
-      />
-    </g>
-    <defs>
-      <filter
-        id="filter0_di_378_3964"
-        width="12"
-        height="13"
-        x="0"
-        y="0"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
-        <feBlend
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_378_3964"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_378_3964"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
-        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_378_3964" />
-      </filter>
-    </defs>
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="M5.857 1.32c1.657.42 2.857 1.92 2.857 3.78v3.3l1.143 1.2v.6H.143v-.6l1.142-1.2V5.1c0-1.86 1.2-3.36 2.858-3.78V.9c0-.48.4-.9.857-.9.457 0 .857.42.857.9v.42ZM5.228 12H5c-.629 0-1.143-.54-1.143-1.2h2.286c0 .18-.058.36-.115.48-.114.36-.4.66-.8.72Zm-.454-3.642h.612V3.217h-.518l-1.325 1.08.331.425.511-.447c.087-.077.161-.141.224-.194.062-.058.127-.125.194-.202a91.559 91.559 0 0 1-.029.533v3.946Z"
+      clip-rule="evenodd"
+    />
   </symbol>
   <!--Без уведомлений-->
   <symbol
     id="bs-bell-slash"
-    width="12"
-    height="13"
+    width="11"
+    height="12"
     fill="none"
-    viewBox="0 0 12 13"
+    viewBox="0 0 11 12"
   >
-    <g fill="currentColor" filter="url(#filter0_di_378_3970)">
-      <path
-        fill-rule="evenodd"
-        d="M6.882 1.32A3.846 3.846 0 0 1 9.824 5.1v2.896l-6.66-5.511A3.864 3.864 0 0 1 5.118 1.32V.9c0-.48.411-.9.882-.9.47 0 .882.42.882.9v.42Zm2.15 8.88-6.82-5.645a4.1 4.1 0 0 0-.036.545v3.3L1 9.6v.6h8.033ZM6.236 12H6c-.647 0-1.176-.54-1.176-1.2h2.352c0 .18-.058.36-.117.48-.118.36-.412.66-.824.72Z"
-        clip-rule="evenodd"
-      />
-      <path d="m.646 2.479.638-.77 9.72 8.043-.638.77L.646 2.48Z" />
-    </g>
-    <defs>
-      <filter
-        id="filter0_di_378_3970"
-        width="12"
-        height="13"
-        x="0"
-        y="0"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
-        <feBlend
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_378_3970"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_378_3970"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
-        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_378_3970" />
-      </filter>
-    </defs>
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="M6.882 1.32A3.846 3.846 0 0 1 9.824 5.1v2.896l-6.66-5.511A3.864 3.864 0 0 1 5.118 1.32V.9c0-.48.411-.9.882-.9.47 0 .882.42.882.9v.42Zm2.15 8.88-6.82-5.645a4.1 4.1 0 0 0-.036.545v3.3L1 9.6v.6h8.033ZM6.236 12H6c-.647 0-1.176-.54-1.176-1.2h2.352c0 .18-.058.36-.117.48-.118.36-.412.66-.824.72Z"
+      clip-rule="evenodd"
+    />
+    <path
+      fill="#B19F63"
+      d="m.646 2.479.638-.77 9.72 8.043-.638.77L.646 2.48Z"
+    />
   </symbol>
 </svg>
