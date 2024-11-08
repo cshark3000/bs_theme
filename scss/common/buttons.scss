@@ -90,7 +90,8 @@
     .show-advanced-search,
     .search-icon
   ),
-.user-menu.revamped .tabs-list .btn {
+.user-menu.revamped .tabs-list .btn,
+.notifications-button {
   &.active {
     background-color: #171e2c;
     color: white !important;
