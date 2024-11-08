@@ -1,3 +1,5 @@
-.admin-customize .themes-list-container__item.selected .components-list {
+.admin-customize .themes-list-container__item.selected .components-list,
+.admin-customize .themes-list-container__item.selected,
+.admin-customize .themes-list-container__item .inner-wrapper {
   color: var(--primary-high);
 }
