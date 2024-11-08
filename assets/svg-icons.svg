@@ -504,7 +504,7 @@ Additional SVG icons
     </defs>
   </symbol>
   <!--Следить-->
-  <symbol id="bell" width="12" height="13" fill="none" viewBox="0 0 12 13">
+  <symbol id="bs-bell" width="12" height="13" fill="none" viewBox="0 0 12 13">
     <g filter="url(#filter0_di_378_3957)">
       <path
         fill="#B19F63"
