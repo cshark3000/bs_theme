@@ -203,7 +203,8 @@ a,
 .sidebar-section-link-wrapper
   .sidebar-section-link
   .sidebar-section-link-suffix.icon.unread
-  svg {
+  svg,
+.topic-post-badges span {
   color: rgba(28, 169, 201, 1);
 }
 
