@@ -204,7 +204,7 @@ a,
   .sidebar-section-link
   .sidebar-section-link-suffix.icon.unread
   svg,
-.topic-post-badges span {
+.topic-post-badges span::before {
   color: rgba(28, 169, 201, 1);
 }
 
