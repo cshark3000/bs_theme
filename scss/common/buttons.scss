@@ -107,8 +107,7 @@
   }
   &:hover {
     background-color: #273653;
-    outline: 1px solid #f9df94;
-    outline-offset: -1px;
+    border: 1px solid #f9df94;
     svg {
       &.d-icon {
         color: #f9df94 !important;
@@ -142,6 +141,15 @@
     }
   }
 }
+.c-navbar_actions .btn,
+.c-navbar__back-button {
+  &:hover {
+    outline: 1px solid #f9df94;
+    outline-offset: -1px;
+    border: none;
+  }
+}
+
 .btn.btn-text.bold,
 .btn.btn-text.italic {
   span {
