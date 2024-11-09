@@ -53,3 +53,14 @@
   border: 1px solid rgba(41, 49, 68, 0.9) !important;
   background-color: #181c26 !important;
 }
+
+.chat-composer__inner-container {
+  border: 1px solid #1e2533;
+  background-color: var(--secondary);
+  .btn {
+    &:hover,
+    &:active {
+      border: none !important;
+    }
+  }
+}
