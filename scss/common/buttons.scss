@@ -107,7 +107,8 @@
   }
   &:hover {
     background-color: #273653;
-    border: 1px solid #f9df94;
+    outline: 1px solid #f9df94;
+    outline-offset: -1px;
     svg {
       &.d-icon {
         color: #f9df94 !important;
