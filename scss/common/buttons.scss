@@ -141,12 +141,12 @@
     }
   }
 }
-.c-navbar_actions .btn,
+.c-navbar__actions .btn,
 .c-navbar__back-button {
   &:hover {
     outline: 1px solid #f9df94;
     outline-offset: -1px;
-    border: none;
+    border: none !important;
   }
 }
 
