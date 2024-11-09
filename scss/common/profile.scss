@@ -36,5 +36,9 @@
 }
 
 [data-content][data-identifier="user-tip"] {
-  background-color: #cccccc;
+  background-color: rgba(11, 19, 33, 1);
+  color: #f2f2f2;
+}
+.fk-d-tooltip__content .arrow {
+  color: rgba(11, 19, 33, 1);
 }

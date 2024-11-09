@@ -88,7 +88,9 @@
     .btn-sidebar-toggle,
     #search-button,
     .show-advanced-search,
-    .search-icon
+    .search-icon,
+    .bold,
+    .italic
   ),
 .user-menu.revamped .tabs-list .btn,
 .notifications-button {
@@ -139,6 +141,37 @@
     }
   }
 }
+.btn.btn-text.bold,
+.btn.btn-text.italic {
+  span {
+    color: #f9df94 !important;
+  }
+  &:hover {
+    background-color: #273653;
+    border: 1px solid #f9df94;
+    svg,
+    span {
+      &.d-icon {
+        color: #f9df94 !important;
+      }
+    }
+    .d-button-label {
+      color: #f9df94 !important;
+    }
+  }
+  &:active {
+    background-color: #f9df94;
+    background-image: none;
+    svg {
+      &.d-icon {
+        color: #1e2533 !important;
+      }
+    }
+    .d-button-label {
+      color: #1e2533 !important;
+    }
+  }
+}
 
 .discourse-no-touch .d-header-icons .icon,
 .discourse-no-touch .header-sidebar-toggle button {
@@ -165,4 +198,15 @@ a,
 .empty-state-body p a,
 .empty-state-body p a:visited {
   color: #f9df94;
+}
+
+.sidebar-section-link-wrapper
+  .sidebar-section-link
+  .sidebar-section-link-suffix.icon.unread
+  svg {
+  color: rgba(28, 169, 201, 1);
+}
+
+.badge-notification.unread-posts {
+  background-color: rgba(28, 169, 201, 1);
 }
