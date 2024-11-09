@@ -203,11 +203,11 @@ a,
 .sidebar-section-link-wrapper
   .sidebar-section-link
   .sidebar-section-link-suffix.icon.unread
-  svg,
-.topic-post-badges span a::before {
+  svg {
   color: rgba(28, 169, 201, 1);
 }
 
-.badge-notification.unread-posts {
-  background-color: rgba(28, 169, 201, 1);
+.badge-notification.unread-posts,
+.topic-post-badges span a::before {
+  background-color: rgba(28, 169, 201, 1) !important;
 }
