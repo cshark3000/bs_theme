@@ -208,6 +208,6 @@ a,
 }
 
 .badge-notification.unread-posts,
-.topic-post-badges span a::before {
+.badge-notification.new-topic::before {
   background-color: rgba(28, 169, 201, 1) !important;
 }
