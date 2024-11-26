@@ -190,7 +190,7 @@
   .category-boxes-with-topics,
   .category-boxes {
     // hides the default categories layout on desktop, so the custom layout appears
-    // display: none;
+    display: none;
   }
 
   .custom-categories-boxes {
@@ -205,7 +205,7 @@
   // hides the default categories layout on mobile, so the custom layout appears
   .mobile-view {
     .category-list.with-topics {
-      // display: none;
+      display: none;
     }
   }
 }
