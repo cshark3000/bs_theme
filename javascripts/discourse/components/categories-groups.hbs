@@ -60,7 +60,7 @@
                     <div class="description">
                       {{html-safe c.description_excerpt}}
                     </div>
-                    {{#if c.isGrandParent}}
+                    {{!-- {{#if c.isGrandParent}}
                       {{#each c.subcategories as |subcategory|}}
                         <div
                           data-category-id={{subcategory.id}}
@@ -118,7 +118,7 @@
                           </a>
                         {{/each}}
                       </div>
-                    {{/if}}
+                    {{/if}} --}}
                   </div>
                   <PluginOutlet
                     @name="category-box-below-each-category"
