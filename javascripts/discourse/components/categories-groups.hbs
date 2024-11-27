@@ -1,8 +1,5 @@
 <section class="category-boxes with-logos with-subcategories">
-  <div
-    class="custom-categories-groups"
-    {{did-insert this.initializeLocalStorage}}
-  >
+  <div class="custom-category-boxes" {{did-insert this.initializeLocalStorage}}>
     {{#each this.categoryGroupList as |t|}}
       <div
         class="custom-category-group-{{this.slugifyIdentifier t.name}}

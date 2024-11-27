@@ -115,7 +115,7 @@ export default class CategoriesGroups extends Component {
     const storedCategories =
       JSON.parse(localStorage.getItem("categoryGroups")) || [];
     const categoryClass = `.custom-category-group-${id}`;
-
+console.log(categoryClass);
     if (storedCategories.includes(categoryClass)) {
       storedCategories.removeObject(categoryClass);
       document.querySelector(categoryClass)?.classList.add("is-expanded");

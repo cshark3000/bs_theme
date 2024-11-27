@@ -107,15 +107,6 @@ table {
   .column {
     margin-top: 2em;
   }
-  .category-boxes,
-  .category-boxes-with-topics,
-  .category-list.subcategory-list,
-  .column.categories,
-  .category-list,
-  .muted-categories {
-    // display: none;
-    // visibility: hidden;
-  }
 }
 
 .category-title-contents {
@@ -202,7 +193,7 @@ table {
   display: grid;
   grid-auto-flow: row;
   grid-gap: 32px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   width: 100%;
   .category-box {
