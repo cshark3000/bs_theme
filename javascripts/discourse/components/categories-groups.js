@@ -39,9 +39,7 @@ export default class CategoriesGroups extends Component {
 
 
   get categoryGroupList() {
-    console.log('FUCK')
     const parsedSettings = parseSettings(settings.category_groups);
-    console.log(`parsedSettings:`, parsedSettings);
     const extraLinks = JSON.parse(settings.extra_links || "[]");
 
     // Initialize an array to keep track of found categories and used links
@@ -53,9 +51,7 @@ export default class CategoriesGroups extends Component {
 
     // Iterate through parsed settings in the defined order
     const categoryGroupList = parsedSettings.reduce((groups, obj) => {
-      console.log(groups);
       const categoryArray = obj.categories.split(",").map((str) => str.trim());
-      console.log(`categoryArray:`,categoryArray)
       const categoryGroup = [];
 
  
@@ -68,8 +64,6 @@ export default class CategoriesGroups extends Component {
         );
 
         if (category) {
-          console.log(`category:`, category);
-          console.log(`foundCategories:`, category.slug);
           categoryGroup.push(category);
           foundCategories.push(category.slug);
         } else {
@@ -118,7 +112,6 @@ export default class CategoriesGroups extends Component {
     const storedCategories =
       JSON.parse(localStorage.getItem("categoryGroups")) || [];
     const categoryClass = `.custom-category-group-${id}`;
-console.log(categoryClass);
     if (storedCategories.includes(categoryClass)) {
       storedCategories.removeObject(categoryClass);
       document.querySelector(categoryClass)?.classList.add("is-expanded");
