@@ -37,6 +37,7 @@ export default class CategoriesGroups extends Component {
     );
   }
 
+
   get categoryGroupList() {
     console.log('FUCK')
     const parsedSettings = parseSettings(settings.category_groups);
