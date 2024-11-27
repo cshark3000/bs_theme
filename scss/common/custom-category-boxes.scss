@@ -101,6 +101,10 @@ table {
   }
 }
 
+.category-boxes .category-box .category-logo.aspect-image img {
+  margin: 0 !important;
+}
+
 .category-list:not(.theme-setting):not(.setting),
 .navigation-categories .list-container .full-width #list-area .contents,
 .categories-list .list-container .full-width #header-list-area .contents {
@@ -232,7 +236,6 @@ table {
         display: grid;
         width: 132px;
         height: 132px;
-        margin: 0 !important;
         img {
           height: 100%;
           width: 100%;
