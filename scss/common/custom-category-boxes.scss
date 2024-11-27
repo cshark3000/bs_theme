@@ -195,6 +195,10 @@ table {
 
 #header-list-area .category-boxes {
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)) !important;
+
+  * > .description {
+    display: none;
+  }
 }
 
 .custom-category-boxes:not(.above-discovery-categories-outlet),
