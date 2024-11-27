@@ -80,7 +80,7 @@ export default class CategoriesGroups extends Component {
       });
 
       if (categoryGroup.length > 0) {
-        groups.push({ name: obj.categoryGroup, items: categoryGroup });
+        groups.push({ name: obj.categoryGroup, items: categoryGroup, id: `${obj.categoryGroup}_${obj.categoryGroup.length}`});
       }
       return groups;
     }, []);
