@@ -52,6 +52,7 @@ export default class CategoriesGroups extends Component {
 
     // Iterate through parsed settings in the defined order
     const categoryGroupList = parsedSettings.reduce((groups, obj) => {
+      console.log(groups);
       const categoryArray = obj.categories.split(",").map((str) => str.trim());
       console.log(`categoryArray:`,categoryArray)
       const categoryGroup = [];
@@ -99,11 +100,12 @@ export default class CategoriesGroups extends Component {
       categoryGroupList.push({
         name: I18n.t(themePrefix("ungrouped_categories_title")),
         items: ungroupedCategories,
+        id:I18n.t(themePrefix("ungrouped_categories_title"))
       });
     }
 
     if (mutedCategories.length > 0) {
-      categoryGroupList.push({ name: "muted", items: mutedCategories });
+      categoryGroupList.push({ name: "muted", items: mutedCategories, id:"muted" });
     }
 
     return categoryGroupList;
