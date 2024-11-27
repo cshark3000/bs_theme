@@ -54,8 +54,5 @@ show_on_mobile:
 show_ungrouped:
   default: true
 
-fancy_styling:
-  default: false
-
 hide_muted_subcategories:
   default: false
