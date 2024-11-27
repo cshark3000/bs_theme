@@ -165,7 +165,8 @@
   }
 }
 
-.navigation-categories .contents {
+.navigation-categories .contents,
+.above-discovery-categories-outlet.custom-categories-boxes {
   .category-boxes-with-topics,
   .category-boxes {
     // hides the default categories layout on desktop, so the custom layout appears
