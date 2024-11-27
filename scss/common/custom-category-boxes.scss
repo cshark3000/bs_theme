@@ -193,6 +193,10 @@ table {
   }
 }
 
+#header-list-area .category-boxes {
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)) !important;
+}
+
 .custom-category-boxes:not(.above-discovery-categories-outlet),
 .category-boxes {
   display: grid;
