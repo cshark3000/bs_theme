@@ -61,7 +61,8 @@ export default class CustomHeaderLinks extends Component {
   }
 
 get userEmail(){
-  return fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`).then(res=>res.json().then(data=>data.email));
+  const email =  fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`).then(res=>res.json().then(data=>data.email));
+  return email;
 }
 
   get userStatus() {
