@@ -61,6 +61,7 @@ export default class CustomHeaderLinks extends Component {
   }
 
   get userStatus() {
+    console.log(this.args.email);
     const status = fetch(`https://brokensun.com/local/api/check_status.php?email=${this.args.email}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json().then(data =>data.checkedStatus));
     return status;
   }
