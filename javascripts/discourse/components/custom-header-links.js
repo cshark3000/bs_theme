@@ -60,9 +60,14 @@ export default class CustomHeaderLinks extends Component {
     return true;
   }
 
+get userEmail(){
+  return fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`).then(res=>res.json().then(data=>data.email));
+}
+
   get userStatus() {
-    console.log(this.args.email);
-    const status = fetch(`https://brokensun.com/local/api/check_status.php?email=${this.args.email}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json().then(data =>data.checkedStatus));
+    console.log(this.args.username);
+    console.log(this.userEmail);
+    const status = fetch(`https://brokensun.com/local/api/check_status.php?email=${this.userEmail}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json().then(data =>data.checkedStatus));
     return status;
   }
 

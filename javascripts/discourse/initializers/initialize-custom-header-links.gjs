@@ -18,6 +18,6 @@ function renderCustomHeaderLinks(api) {
   const user = api.getCurrentUser();
   console.log(user);
   api.renderInOutlet("before-header-panel", <template>
-    <CustomHeaderLinks @email={{user.email}}/>
+    <CustomHeaderLinks @username={{user.username}}/>
   </template>);
 }
