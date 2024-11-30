@@ -1,6 +1,6 @@
 category_groups:
   type: "list"
-  default: "Broken Sun: news, discuss, clans, community, support, ideas|Broken Sun ЗБТ: cbt, wiki, tehnicheskaya-podderzhka-zbt, testers|Административный раздел: moderators, admins|"
+  default: "Основное: news, informacziya-o-forume|Broken Sun ЗБТ: cbt, wiki, tehnicheskaya-podderzhka-zbt, testers|Общение: discuss, clans, community, ideas, support, english|Административный раздел: moderators, admins"
 extra_links:
   default: >
     []
@@ -56,3 +56,55 @@ show_ungrouped:
 
 hide_muted_subcategories:
   default: false
+
+custom_header_links:
+  type: objects
+  default: []
+  schema:
+    name: "link"
+    identifier: text
+    properties:
+      text:
+        type: string
+        required: true
+        validations:
+          min_length: 1
+          max_length: 100
+      title:
+        type: string
+        validations:
+          min_length: 1
+          max_length: 1000
+      url:
+        type: string
+        required: true
+        validations:
+          min_length: 1
+          max_length: 2048
+          url: true
+      view:
+        type: enum
+        choices:
+          - vdm
+          - vdo
+          - vmo
+      target:
+        type: enum
+        choices:
+          - blank
+          - self
+      hide_on_scroll:
+        type: enum
+        choices:
+          - remove
+          - keep
+        default: keep
+      locale:
+        type: string
+
+links_position:
+  default: right
+  type: enum
+  choices:
+    - right
+    - left
