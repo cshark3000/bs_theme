@@ -61,19 +61,24 @@ export default class CustomHeaderLinks extends Component {
   }
 
  get userEmail(){
-  const email =  fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`);
-  return Promise.resolve(email).then(res=>res.json()).then(data=>data.email);
+  return this.fetchEmail();
 }
 
-  get userStatus() {
-    console.log(this.args.username);
-    console.log(this.userEmail);
-    const status = fetch(`https://brokensun.com/local/api/check_status.php?email=${this.userEmail}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json()).then(data =>data.checkedStatus);
-    return Promise.resolve(status);
+async fetchEmail() {
+  const email = await fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`).then(res=>res.json()).then(data=>data.email);
+ //const email = await fetch(`https://discourse.theme-creator.io/u/${this.args.username}/emails.json`).then(res=>res.json()).then(data=>data.email);
+   return email;
+}
+
+  async fetchUserStatus() {
+const email = await this.fetchEmail();
+console.log(email);
+    const status = await fetch(`https://brokensun.com/local/api/check_status.php?email=${email}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json()).then(data =>data.checkedStatus);
+    return status;
   }
 
   get mainLink(){
-   return mainLinks.filter(link=>link.status===this.userStatus);
+   return mainLinks.filter(link=>link.status===this.fetchUserStatus());
   }
 
   get links() {
