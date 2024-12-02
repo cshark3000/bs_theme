@@ -135,12 +135,24 @@
     }
   }
   .game-custom-header-links {
-    width: 168px;
+    width: 140px;
+    &:hover {
+      width: 132px;
+      margin-right: 4px;
+      &::after {
+        left: 7px;
+      }
+      &::before {
+        left: -7px;
+      }
+    }
     &::after {
-      left: 12px;
+      left: 10px;
+      background-size: 16%;
     }
     &::before {
-      left: -12px;
+      left: -10px;
+      background-size: 16%;
     }
   }
   .signup-custom-header-links {
