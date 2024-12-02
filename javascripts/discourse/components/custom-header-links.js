@@ -27,7 +27,7 @@ const mainLinks = [
   {
     text: "ИГРАТЬ",
     title: "game",
-    status: "Регистрация",
+    status: "Играть",
     url: "https://client.brokensun.com",
     target: "blank",
     hide_on_scroll: "keep",
@@ -47,7 +47,7 @@ const mainLinks = [
   {
     text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация_",
+    status: "Регистрация",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",

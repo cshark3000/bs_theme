@@ -156,26 +156,26 @@
     }
   }
   .signup-custom-header-links {
-    background-image: url($mainBtnCbt);
+    background-image: url($mainBtnChecking);
     width: 210px;
     &::after {
       left: 11px;
-      background-size: 13%;
+      background-size: 11%;
     }
     &::before {
       left: -11px;
-      background-size: 13%;
+      background-size: 11%;
     }
     &:hover {
-      width: 200px;
-      background-image: url($mainBtnCbtHover);
-      margin-right: 5px;
+      width: 204px;
+      background-image: url($mainBtnCheckingHover);
+      margin-right: 3px;
       height: 40px;
       &::after {
-        left: 6px;
+        left: 8px;
       }
       &::before {
-        left: -6px;
+        left: -8px;
       }
     }
   }
