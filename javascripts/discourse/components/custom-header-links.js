@@ -47,7 +47,7 @@ const mainLinks = [
   {
     text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация_",
+    status: "Регистрация",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
@@ -100,6 +100,7 @@ export default class CustomHeaderLinks extends Component {
       this.userStatus = userStatus;
     } else {
       console.log(4)
+      userStatus = "Регистрация";
       this.userStatus = "Регистрация";
     }
 
