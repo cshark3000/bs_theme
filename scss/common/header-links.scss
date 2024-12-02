@@ -86,26 +86,26 @@
   }
 
   .cbt-custom-header-links {
-    width: 223px;
+    width: 192px;
     background-image: url($mainBtnCbt);
     &:hover {
-      width: 207px;
-      margin-right: 8px;
-      background-size: cover;
+      width: 186px;
+      margin-right: 3px;
+      background-image: url($mainBtnCbtHover);
       height: 40px;
       &::after {
-        left: 12px;
+        left: 9px;
       }
       &::before {
-        left: -12px;
+        left: -9px;
       }
     }
     &::after {
-      left: 18px;
+      left: 11px;
       background-size: 13%;
     }
     &::before {
-      left: -18px;
+      left: -11px;
       background-size: 13%;
     }
   }
@@ -156,8 +156,8 @@
     }
     &:hover {
       width: 200px;
+      background-image: url($mainBtnCbtHover);
       margin-right: 5px;
-      background-size: cover;
       height: 40px;
       &::after {
         left: 6px;
