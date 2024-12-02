@@ -2,13 +2,21 @@ import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
 
-
-
-
 const websiteLink = {
   text: "Сайт",
   title: "website",
   url: "https://brokensun.com",
+  target: "blank",
+  hide_on_scroll: "keep",
+  locale: "ru",
+  view: "vdm",
+};
+
+const signupLink =  {
+  text: "РЕГИСТРАЦИЯ",
+  title: "signup",
+  status: "Регистрация",
+  url: "https://forum.brokensun.com/sigup",
   target: "blank",
   hide_on_scroll: "keep",
   locale: "ru",
@@ -37,10 +45,10 @@ const mainLinks = [
     view: "vdm",
   },
   {
-    text: "РЕГИСТРАЦИЯ",
-    title: "signup",
+    text: "Хочу на ЗБТ",
+    title: "cbt",
     status: "Регистрация",
-    url: "https://forum.brokensun.com/sigup",
+    url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
     locale: "ru",
@@ -62,32 +70,41 @@ export default class CustomHeaderLinks extends Component {
   @tracked userStatus = null;
 
   get mainLink() {
-    const mainLink = mainLinks.filter((link) => link.status === this.userStatus)[0];
+    let mainLink;
+    if (!this.args.username) {
+      mainLink = signupLink;
+    } else {
+      mainLink = mainLinks.filter((link) => link.status === this.userStatus)[0];
+    }
+
     return mainLink;
   }
 
-@action
-  async getUserStatus(){
-    console.log(2)
-   
-    const email = await fetch(
-   //   `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
-   `https://forum.brokensun.com/u/${this.args.username}/emails.json`
-    )
-      .then((res) => res.json())
-      .then((data) => data.email);
-    const userStatus =  await fetch(
-      `https://brokensun.com/local/api/check_status.php?email=${email}&key=JgEp4cwld3t0wAGi`
-    )
-      .then((res) => res.json())
-      .then((data) => data.checked_status);
-   
-this.userStatus = userStatus
-   return userStatus;
-   }
+  @action
+  async getUserStatus() {
+    console.log(2);
+    let userStatus;
+    if (this.args.username) {
+      const email = await fetch(
+        //   `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+        `https://forum.brokensun.com/u/${this.args.username}/emails.json`
+      )
+        .then((res) => res.json())
+        .then((data) => data.email);
+      userStatus = await fetch(
+        `https://brokensun.com/local/api/check_status.php?email=${email}&key=JgEp4cwld3t0wAGi`
+      )
+        .then((res) => res.json())
+        .then((data) => data.checked_status);
+      this.userStatus = userStatus;
+    } else {
+      this.userStatus = "Регистрация";
+    }
 
-  get  links() {
-    console.log(this.mainLink);
+    return userStatus;
+  }
+
+  get links() {
     return [this.mainLink, websiteLink].reduce((result, link) => {
       const linkText = link.text;
       const linkTitle = link.title;
@@ -96,7 +113,6 @@ this.userStatus = userStatus
       const hideOnScroll = link.hide_on_scroll;
       const locale = link.locale;
       const device = link.view;
-      console.log(link);
 
       const linkClass = `${linkTitle}-custom-header-links`; // legacy name
 
@@ -114,7 +130,6 @@ this.userStatus = userStatus
         anchorAttributes,
         linkText,
       });
-console.log(result);
       return result;
     }, []);
   }

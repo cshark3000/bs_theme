@@ -37,7 +37,8 @@ export default {
 
  function renderCustomHeaderLinks(api) {
   const user = api.getCurrentUser();
+  const username = user ? user.username : null;
   api.renderInOutlet("before-header-panel", <template>
-    <CustomHeaderLinks @username={{user.username}}/>
+    <CustomHeaderLinks @username={{username}}/>
   </template>);
 }
