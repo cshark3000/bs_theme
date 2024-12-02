@@ -87,6 +87,27 @@
 
   .cbt-custom-header-links {
     width: 223px;
+    background-image: url($mainBtnCbt);
+    &:hover {
+      width: 207px;
+      margin-right: 8px;
+      background-size: cover;
+      height: 40px;
+      &::after {
+        left: 12px;
+      }
+      &::before {
+        left: -12px;
+      }
+    }
+    &::after {
+      left: 18px;
+      background-size: 13%;
+    }
+    &::before {
+      left: -18px;
+      background-size: 13%;
+    }
   }
   .checking-custom-header-links {
     width: 261px;
@@ -118,7 +139,6 @@
       background-size: 13%;
     }
     &:hover {
-      background-image: url($mainBtnCbtHover);
       width: 200px;
       margin-right: 5px;
       background-size: cover;

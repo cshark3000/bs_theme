@@ -25,16 +25,6 @@ const signupLink =  {
 
 const mainLinks = [
   {
-    text: "РЕГИСТРАЦИЯ",
-    title: "signup",
-    status: "Регистрация",
-    url: "https://forum.brokensun.com/sigup",
-    target: "blank",
-    hide_on_scroll: "keep",
-    locale: "ru",
-    view: "vdm",
-  },
-  {
     text: "ИГРАТЬ",
     title: "game",
     status: "Играть",
@@ -57,7 +47,7 @@ const mainLinks = [
   {
     text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация_",
+    status: "Регистрация",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
