@@ -85,6 +85,7 @@ export default class CustomHeaderLinks extends Component {
     console.log(2);
     let userStatus;
     if (this.args.username) {
+      console.log(3)
       const email = await fetch(
           // `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
         `https://forum.brokensun.com/u/${this.args.username}/emails.json`
@@ -98,6 +99,7 @@ export default class CustomHeaderLinks extends Component {
         .then((data) => data.checked_status);
       this.userStatus = userStatus;
     } else {
+      console.log(4)
       this.userStatus = "Регистрация";
     }
 
