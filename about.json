@@ -30,7 +30,9 @@
     "mainBtnVectorRightHover": "assets/main_btn_vector_right_hover.svg",
     "mainBtnCbt": "assets/main_btn_cbt.png",
     "mainBtnBgHover": "assets/main_btn_bg_hover.png",
-    "mainBtnCbtHover": "assets/main_btn_cbt_hover.png"
+    "mainBtnCbtHover": "assets/main_btn_cbt_hover.png",
+    "mainBtnChecking": "assets/main_btn_checking.png",
+    "mainBtnCheckingHover": "assets/main_btn_checking_hover.png"
   },
   "color_schemes": {
     "BS_Color": {

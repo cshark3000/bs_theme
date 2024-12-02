@@ -110,12 +110,28 @@
     }
   }
   .checking-custom-header-links {
-    width: 261px;
+    width: 214px;
+    background-image: url($mainBtnChecking);
+    &:hover {
+      width: 206px;
+      background-image: url($mainBtnCheckingHover);
+      margin-right: 4px;
+      height: 40px;
+      &::after {
+        left: 6px;
+      }
+      &::before {
+        left: -6px;
+      }
+    }
+
     &::after {
-      left: 22px;
+      left: 10px;
+      background-size: 11%;
     }
     &::before {
-      left: -22px;
+      left: -10px;
+      background-size: 11%;
     }
   }
   .game-custom-header-links {

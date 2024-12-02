@@ -47,7 +47,7 @@ const mainLinks = [
   {
     text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация",
+    status: "Регистрация_",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
@@ -57,7 +57,7 @@ const mainLinks = [
   {
     text: "СТАТУС ЗАЯВКИ",
     title: "checking",
-    status: "Статус заявки",
+    status: "Регистрация",
     url: "https://brokensun.com/ru/checking/",
     target: "blank",
     hide_on_scroll: "keep",
