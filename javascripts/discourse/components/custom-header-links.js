@@ -98,11 +98,6 @@ this.userStatus = userStatus
       const device = link.view;
       console.log(link);
 
-      if (!linkText || (locale && document.documentElement.lang !== locale)) {
-        console.log('return result from if', result)
-        return result;
-      }
-
       const linkClass = `${linkTitle}-custom-header-links`; // legacy name
 
       const anchorAttributes = {
