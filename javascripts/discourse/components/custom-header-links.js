@@ -99,7 +99,7 @@ this.userStatus = userStatus
       console.log(link);
 
       if (!linkText || (locale && document.documentElement.lang !== locale)) {
-        console.log('return result from if')
+        console.log('return result from if', result)
         return result;
       }
 
