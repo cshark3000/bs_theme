@@ -32,7 +32,8 @@
     "mainBtnBgHover": "assets/main_btn_bg_hover.png",
     "mainBtnCbtHover": "assets/main_btn_cbt_hover.png",
     "mainBtnChecking": "assets/main_btn_checking.png",
-    "mainBtnCheckingHover": "assets/main_btn_checking_hover.png"
+    "mainBtnCheckingHover": "assets/main_btn_checking_hover.png",
+    "mainBtnCheckingActive": "assets/main_btn_checking_active.png"
   },
   "color_schemes": {
     "BS_Color": {

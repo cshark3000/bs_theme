@@ -79,9 +79,13 @@
     }
 
     a {
-      color: black !important;
+      color: black;
       font-size: 18px !important;
       margin-top: 3px;
+      z-index: 999;
+      &:active {
+        color: #f9df94 !important;
+      }
     }
   }
 
@@ -112,6 +116,9 @@
   .checking-custom-header-links {
     width: 214px;
     background-image: url($mainBtnChecking);
+    &:active {
+      background-image: url($mainBtnCheckingActive);
+    }
     &:hover {
       width: 206px;
       background-image: url($mainBtnCheckingHover);
@@ -195,7 +202,6 @@
   .headerLink {
     list-style: none;
     a {
-      color: var(--header_primary);
       font-size: var(--font-up-1);
     }
   }

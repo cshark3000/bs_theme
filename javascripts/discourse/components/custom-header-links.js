@@ -47,7 +47,7 @@ const mainLinks = [
   {
     text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация",
+    status: "Регистрация_",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
@@ -86,8 +86,8 @@ export default class CustomHeaderLinks extends Component {
     let userStatus;
     if (this.args.username) {
       const email = await fetch(
-           `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
-        //`https://forum.brokensun.com/u/${this.args.username}/emails.json`
+          // `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+        `https://forum.brokensun.com/u/${this.args.username}/emails.json`
       )
         .then((res) => res.json())
         .then((data) => data.email);
