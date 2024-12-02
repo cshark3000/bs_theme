@@ -60,24 +60,19 @@ const mainLinks = [
 
 export default class CustomHeaderLinks extends Component {
   @tracked userStatus = null;
- // mainLink=mainLinks[0];
-
-  constructor(){
-    super(...arguments)
-   //Promise.resolve(this.getUserStatus()).then(data=>console.log(data));
-  }
 
   get mainLink() {
-   // const status = await this.fetchUserStatus();
-   console.log("userStratus",this.userStatus)
     const mainLink = mainLinks.filter((link) => link.status === this.userStatus)[0];
     return mainLink;
   }
+
 @action
   async getUserStatus(){
     console.log(2)
+   
     const email = await fetch(
-      `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+   //   `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+   `https://forum.brokensun.com/u/${this.args.username}/emails.json`
     )
       .then((res) => res.json())
       .then((data) => data.email);
@@ -92,9 +87,7 @@ this.userStatus = userStatus
    }
 
   get  links() {
-    console.log(this.mainLink)
     return [this.mainLink, websiteLink].reduce((result, link) => {
-      console.log(result, link)
       const linkText = link.text;
       const linkTitle = link.title;
       const linkHref = link.url;
