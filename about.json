@@ -23,7 +23,14 @@
     "chatActive": "assets/chat_active.svg",
     "barsHover": "assets/bars_hover.svg",
     "barsActive": "assets/bars_active.svg",
-    "mainBtnBg": "assets/main_btn_bg.png"
+    "mainBtnBg": "assets/main_btn_bg.png",
+    "mainBtnVectorLeft": "assets/main_btn_vector_left.svg",
+    "mainBtnVectorRight": "assets/main_btn_vector_right.svg",
+    "mainBtnVectorLeftHover": "assets/main_btn_vector_left_hover.svg",
+    "mainBtnVectorRightHover": "assets/main_btn_vector_right_hover.svg",
+    "mainBtnCbt": "assets/main_btn_cbt.png",
+    "mainBtnBgHover": "assets/main_btn_bg_hover.png",
+    "mainBtnCbtHover": "assets/main_btn_cbt_hover.png"
   },
   "color_schemes": {
     "BS_Color": {

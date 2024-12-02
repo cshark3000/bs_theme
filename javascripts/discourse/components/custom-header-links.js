@@ -25,6 +25,16 @@ const signupLink =  {
 
 const mainLinks = [
   {
+    text: "РЕГИСТРАЦИЯ",
+    title: "signup",
+    status: "Регистрация",
+    url: "https://forum.brokensun.com/sigup",
+    target: "blank",
+    hide_on_scroll: "keep",
+    locale: "ru",
+    view: "vdm",
+  },
+  {
     text: "ИГРАТЬ",
     title: "game",
     status: "Играть",
@@ -35,7 +45,7 @@ const mainLinks = [
     view: "vdm",
   },
   {
-    text: "Хочу на ЗБТ",
+    text: "ХОЧУ НА ЗБТ",
     title: "cbt",
     status: "Хочу на ЗБТ",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
@@ -45,9 +55,9 @@ const mainLinks = [
     view: "vdm",
   },
   {
-    text: "Хочу на ЗБТ",
+    text: "ХОЧУ НА ЗБТ",
     title: "cbt",
-    status: "Регистрация",
+    status: "Регистрация_",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
     target: "blank",
     hide_on_scroll: "keep",
@@ -86,8 +96,8 @@ export default class CustomHeaderLinks extends Component {
     let userStatus;
     if (this.args.username) {
       const email = await fetch(
-        //   `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
-        `https://forum.brokensun.com/u/${this.args.username}/emails.json`
+           `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+        //`https://forum.brokensun.com/u/${this.args.username}/emails.json`
       )
         .then((res) => res.json())
         .then((data) => data.email);

@@ -22,6 +22,7 @@
   display: inline-flex;
   align-items: center;
   margin-left: auto;
+  gap: 20px;
   @if $links_position == "left" {
     margin-left: 1em;
     &--hide-links {
@@ -34,11 +35,101 @@
   .signup-custom-header-links,
   .checking-custom-header-links {
     display: flex;
+    height: 42px;
     background-image: url($mainBtnBg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 16px 22px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url($mainBtnBgHover);
+      &::after {
+        background-image: url($mainBtnVectorLeftHover);
+      }
+      &::before {
+        background-image: url($mainBtnVectorRightHover);
+      }
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 18px;
+      top: 1px;
+      width: 100%;
+      height: 100%;
+      background-image: url($mainBtnVectorLeft);
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -18px;
+      top: 1px;
+      width: 100%;
+      height: 100%;
+      background-image: url($mainBtnVectorRight);
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    a {
+      color: black !important;
+      font-size: 18px !important;
+      margin-top: 3px;
+    }
+  }
+
+  .cbt-custom-header-links {
+    width: 223px;
+  }
+  .checking-custom-header-links {
+    width: 261px;
+    &::after {
+      left: 22px;
+    }
+    &::before {
+      left: -22px;
+    }
+  }
+  .game-custom-header-links {
+    width: 168px;
+    &::after {
+      left: 12px;
+    }
+    &::before {
+      left: -12px;
+    }
+  }
+  .signup-custom-header-links {
+    background-image: url($mainBtnCbt);
+    width: 210px;
+    &::after {
+      left: 11px;
+      background-size: 13%;
+    }
+    &::before {
+      left: -11px;
+      background-size: 13%;
+    }
+    &:hover {
+      background-image: url($mainBtnCbtHover);
+      width: 200px;
+      margin-right: 5px;
+      background-size: cover;
+      height: 40px;
+      &::after {
+        left: 6px;
+      }
+      &::before {
+        left: -6px;
+      }
+    }
   }
 
   .website-custom-header-links {
@@ -56,7 +147,6 @@
   .headerLink {
     list-style: none;
     a {
-      padding: 0.35em 0.6em;
       color: var(--header_primary);
       font-size: var(--font-up-1);
     }

@@ -1,0 +1,44 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="43"
+  fill="none"
+  viewBox="0 0 32 43"
+>
+  <path
+    fill="url(#paint0_linear_0_1)"
+    fill-rule="evenodd"
+    d="m10.868 9.942.001-.001L21.261 0v2.81l-7.488 7.162 5.038 5.038-5.798 5.795 5.82 5.817-5.074 5.072 7.502 7.503v2.873l-10.4-10.399 5.072-5.072-4.356-4.357-5.07 5.073-.002-.001L0 20.81v-.001l6.51-6.508V14.3l5.067 5.069 4.36-4.359-5.069-5.068Zm-4.36 7.231-3.635 3.635 3.633 3.633 3.635-3.635-3.633-3.633Z"
+    clip-rule="evenodd"
+  />
+  <path
+    fill="url(#paint1_linear_0_1)"
+    fill-rule="evenodd"
+    d="m20.868 9.942.001-.001L31.261 0v2.81l-7.488 7.162 5.038 5.038-5.798 5.795 5.82 5.817-5.074 5.072 7.502 7.503v2.873l-10.4-10.399 5.072-5.072-4.356-4.357-5.07 5.073-.002-.001L10 20.81v-.001l6.51-6.508V14.3l5.067 5.069 4.36-4.359-5.069-5.068Zm-4.36 7.231-3.635 3.635 3.633 3.633 3.635-3.635-3.633-3.633Z"
+    clip-rule="evenodd"
+  />
+  <defs>
+    <linearGradient
+      id="paint0_linear_0_1"
+      x1="21.261"
+      x2="0"
+      y1="21.035"
+      y2="21.035"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#FFAC22" stop-opacity="0" />
+      <stop offset="1" stop-color="#FFAC22" />
+    </linearGradient>
+    <linearGradient
+      id="paint1_linear_0_1"
+      x1="31.261"
+      x2="10"
+      y1="21.035"
+      y2="21.035"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#FFC15A" stop-opacity="0" />
+      <stop offset="1" stop-color="#FFC15A" />
+    </linearGradient>
+  </defs>
+</svg>
