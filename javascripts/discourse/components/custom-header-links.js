@@ -96,9 +96,10 @@ this.userStatus = userStatus
       const hideOnScroll = link.hide_on_scroll;
       const locale = link.locale;
       const device = link.view;
-      console.log(result);
+      console.log(link);
 
       if (!linkText || (locale && document.documentElement.lang !== locale)) {
+        console.log('return result from if')
         return result;
       }
 
@@ -118,7 +119,7 @@ this.userStatus = userStatus
         anchorAttributes,
         linkText,
       });
-
+console.log(result);
       return result;
     }, []);
   }
