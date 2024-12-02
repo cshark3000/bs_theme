@@ -22,7 +22,8 @@
     "chatHover": "assets/chat_hover.svg",
     "chatActive": "assets/chat_active.svg",
     "barsHover": "assets/bars_hover.svg",
-    "barsActive": "assets/bars_active.svg"
+    "barsActive": "assets/bars_active.svg",
+    "mainBtnBg": "assets/main_btn_bg.png"
   },
   "color_schemes": {
     "BS_Color": {

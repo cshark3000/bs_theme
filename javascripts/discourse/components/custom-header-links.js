@@ -1,89 +1,100 @@
 import Component from "@glimmer/component";
-import { apiInitializer } from "discourse/lib/api";
+import { tracked } from "@glimmer/tracking";
+import { action } from "@ember/object";
 
-const websiteLink= {
-  text:"Сайт",
-  title:"website",
+
+
+
+const websiteLink = {
+  text: "Сайт",
+  title: "website",
   url: "https://brokensun.com",
-  target:"blank",
-  hide_on_scroll:"keep",
-  locale:"ru",
-  view:"vdm"
+  target: "blank",
+  hide_on_scroll: "keep",
+  locale: "ru",
+  view: "vdm",
 };
 
 const mainLinks = [
   {
-    text:"ИГРАТЬ",
-    title:"game",
-    status:"Играть",
+    text: "ИГРАТЬ",
+    title: "game",
+    status: "Играть",
     url: "https://client.brokensun.com",
-    target:"blank",
-    hide_on_scroll:"keep",
-    locale:"ru",
-    view:"vdm"
+    target: "blank",
+    hide_on_scroll: "keep",
+    locale: "ru",
+    view: "vdm",
   },
   {
-    text:"Хочу на ЗБТ",
-    title:"cbt",
+    text: "Хочу на ЗБТ",
+    title: "cbt",
     status: "Хочу на ЗБТ",
     url: "https://brokensun.com/ru/pre-registration/new_request/",
-    target:"blank",
-    hide_on_scroll:"keep",
-    locale:"ru",
-    view:"vdm"
+    target: "blank",
+    hide_on_scroll: "keep",
+    locale: "ru",
+    view: "vdm",
   },
   {
-    text:"РЕГИСТРАЦИЯ",
-    title:"signup",
-    status:"Регистрация",
+    text: "РЕГИСТРАЦИЯ",
+    title: "signup",
+    status: "Регистрация",
     url: "https://forum.brokensun.com/sigup",
-    target:"blank",
-    hide_on_scroll:"keep",
-    locale:"ru",
-    view:"vdm"
+    target: "blank",
+    hide_on_scroll: "keep",
+    locale: "ru",
+    view: "vdm",
   },
   {
-    text:"СТАТУС ЗАЯВКИ",
-    title:"checking",
-    status:"Статус заявки",
+    text: "СТАТУС ЗАЯВКИ",
+    title: "checking",
+    status: "Статус заявки",
     url: "https://brokensun.com/ru/checking/",
-    target:"blank",
-    hide_on_scroll:"keep",
-    locale:"ru",
-    view:"vdm"
+    target: "blank",
+    hide_on_scroll: "keep",
+    locale: "ru",
+    view: "vdm",
   },
-
 ];
 
 export default class CustomHeaderLinks extends Component {
-  get shouldShow() {
-    return true;
+  @tracked userStatus = null;
+ // mainLink=mainLinks[0];
+
+  constructor(){
+    super(...arguments)
+   //Promise.resolve(this.getUserStatus()).then(data=>console.log(data));
   }
 
- get userEmail(){
-  return this.fetchEmail();
-}
-
-async fetchEmail() {
-  const email = await fetch(`https://forum.brokensun.com/u/${this.args.username}/emails.json`).then(res=>res.json()).then(data=>data.email);
- //const email = await fetch(`https://discourse.theme-creator.io/u/${this.args.username}/emails.json`).then(res=>res.json()).then(data=>data.email);
-   return email;
-}
-
-  async fetchUserStatus() {
-const email = await this.fetchEmail();
-console.log(email);
-    const status = await fetch(`https://brokensun.com/local/api/check_status.php?email=${email}&key=JgEp4cwld3t0wAGi`).then(res =>  res.json()).then(data =>data.checkedStatus);
-    return status;
+  get mainLink() {
+   // const status = await this.fetchUserStatus();
+   console.log("userStratus",this.userStatus)
+    const mainLink = mainLinks.filter((link) => link.status === this.userStatus)[0];
+    return mainLink;
   }
+@action
+  async getUserStatus(){
+    console.log(2)
+    const email = await fetch(
+      `https://discourse.theme-creator.io/u/${this.args.username}/emails.json`
+    )
+      .then((res) => res.json())
+      .then((data) => data.email);
+    const userStatus =  await fetch(
+      `https://brokensun.com/local/api/check_status.php?email=${email}&key=JgEp4cwld3t0wAGi`
+    )
+      .then((res) => res.json())
+      .then((data) => data.checked_status);
+   
+this.userStatus = userStatus
+   return userStatus;
+   }
 
-  get mainLink(){
-   return mainLinks.filter(link=>link.status===this.fetchUserStatus());
-  }
-
-  get links() {
-    
+  get  links() {
+    console.log(this.mainLink)
     return [this.mainLink, websiteLink].reduce((result, link) => {
+      console.log(result, link)
       const linkText = link.text;
       const linkTitle = link.title;
       const linkHref = link.url;

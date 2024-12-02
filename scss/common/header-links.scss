@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "XXII Centar Regular";
+  src: url($XXIICentarRegular) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .before-header-panel-outlet {
   display: flex;
 }
@@ -19,6 +26,30 @@
     margin-left: 1em;
     &--hide-links {
       display: none;
+    }
+  }
+
+  .game-custom-header-links,
+  .cbt-custom-header-links,
+  .signup-custom-header-links,
+  .checking-custom-header-links {
+    display: flex;
+    background-image: url($mainBtnBg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 16px 22px;
+  }
+
+  .website-custom-header-links {
+    a {
+      font-family: "XXII Centar Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px !important;
+      line-height: 20px;
+      color: #c5ae70 !important;
+      padding: none !important;
     }
   }
 
