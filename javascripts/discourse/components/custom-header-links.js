@@ -87,6 +87,7 @@ this.userStatus = userStatus
    }
 
   get  links() {
+    console.log(this.mainLink);
     return [this.mainLink, websiteLink].reduce((result, link) => {
       const linkText = link.text;
       const linkTitle = link.title;
