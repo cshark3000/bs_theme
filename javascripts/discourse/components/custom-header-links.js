@@ -96,6 +96,7 @@ this.userStatus = userStatus
       const hideOnScroll = link.hide_on_scroll;
       const locale = link.locale;
       const device = link.view;
+      console.log(result);
 
       if (!linkText || (locale && document.documentElement.lang !== locale)) {
         return result;
