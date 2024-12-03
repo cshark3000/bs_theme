@@ -4,6 +4,6 @@ createWidget('header-links', {
   tagName: 'div.hello',
 
   html() {
-    return "";
+    return "hello world";
   }
 });
