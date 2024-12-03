@@ -209,6 +209,12 @@ a,
   color: #f9df94;
 }
 
+.regular.contents {
+  * > a:visited {
+    color: #f9df94;
+  }
+}
+
 .sidebar-section-link-wrapper
   .sidebar-section-link
   .sidebar-section-link-suffix.icon.unread
