@@ -64,3 +64,43 @@
     }
   }
 }
+
+#reply-control {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  height: 0;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $reply-area-max-width;
+  width: 100%;
+
+  &.closed {
+    * {
+      display: block !important;
+    }
+    * > * {
+      display: block !important;
+      height: 100px !important;
+    }
+  }
+
+  &.hide-preview {
+    max-width: 740px;
+  }
+
+  .with-form-template {
+    .toggle-preview,
+    #mobile-file-upload,
+    .submit-panel .mobile-preview {
+      display: block !important;
+    }
+    .d-editor-preview-wrapper {
+      display: block !important;
+      flex: 0;
+    }
+  }
+}
