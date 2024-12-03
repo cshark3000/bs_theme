@@ -16,7 +16,7 @@ const signupLink =  {
   text: "РЕГИСТРАЦИЯ",
   title: "signup",
   status: "Регистрация",
-  url: "https://forum.brokensun.com/sigup",
+  url: "https://forum.brokensun.com/signup",
   target: "blank",
   hide_on_scroll: "keep",
   locale: "ru",
