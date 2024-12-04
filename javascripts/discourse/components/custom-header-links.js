@@ -57,7 +57,7 @@ const mainLinks = [
   {
     text: "СТАТУС ЗАЯВКИ",
     title: "checking",
-    status: "Статус заявки",
+    status: "Статус Заявки",
     url: "https://brokensun.com/ru/checking/",
     target: "blank",
     hide_on_scroll: "keep",
