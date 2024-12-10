@@ -11,6 +11,11 @@
 .page-not-found {
   text-align: center;
   margin: 30px 0 81px 0;
+
+  .title {
+    font-family: "XXII Centar Regular";
+    color: white;
+  }
 }
 
 .page-not-found-topics {
@@ -24,4 +29,11 @@
 
 .not-found-topic a {
   color: #f9df94 !important;
+}
+
+@font-face {
+  font-family: "XXII Centar Regular";
+  src: url($XXIICentarRegular) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
