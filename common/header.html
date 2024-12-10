@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  var topics = document.getElementsByClassName("page-not-found-topics");
+  var popularTopicsBtn = topics[0].firstElementChild.lastElementChild;
+  var recentTopicsBtn = topics[0].lastElementChild.lastElementChild;
+  var newLabel = popularTopicsBtn.innerHTML
+    .toString()
+    .substring(0, popularTopicsBtn.innerHTML.length - 1);
+  popularTopicsBtn.innerHTML = newLabel;
+  recentTopicsBtn.innerHTML = newLabel;
+</script>
