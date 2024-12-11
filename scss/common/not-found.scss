@@ -27,8 +27,10 @@
 
 .page-not-found-topics {
   justify-content: center;
-  background-color: #222222;
-  color: white;
+  .btn {
+    background-color: #222222;
+    color: white;
+  }
 }
 
 .not-found-topic a {
