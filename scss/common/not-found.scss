@@ -9,9 +9,9 @@
 
 .page-not-found {
   text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 40px 0;
   display: grid;
-  gap: 20px;
+  gap: 30px;
 
   .title {
     font-family: "XXII Centar Regular";
@@ -21,10 +21,12 @@
   .btn {
     justify-self: flex-start;
     background-color: #171e2c;
+    margin-bottom: -30px;
   }
 }
 
 .page-not-found-topics {
+  justify-content: center;
   .btn {
     background-color: #222222;
     color: white;
