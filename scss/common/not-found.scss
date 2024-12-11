@@ -21,17 +21,23 @@
   .btn {
     justify-self: flex-start;
     background-color: #171e2c;
+    margin-bottom: -20px;
   }
 }
 
 .page-not-found-topics {
-  justify-content: space-evenly;
-  .btn {
-    background-color: #222222;
-    color: white;
-  }
+  justify-content: center;
+  background-color: #222222;
+  color: white;
 }
 
 .not-found-topic a {
   color: #f9df94 !important;
+}
+
+@font-face {
+  font-family: "XXII Centar Regular";
+  src: url($XXIICentarRegular) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
