@@ -1,5 +1,5 @@
 .not-found-container {
-  width: 75%;
+  width: 75vw;
   background: #121824;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .page-not-found-topics {
-  justify-content: center;
+  justify-content: space-between;
   .btn {
     background-color: #222222;
     color: white;
